@@ -17,6 +17,13 @@
 	}
 }
 
+a, button {
+  cursor: url(../images/decorative/cursor.png) 43 43, pointer;
+}
+a:hover button:hover {
+  cursor: url(../images/decorative/cursor.png) 43 43, pointer;
+}
+
 html {
   font-size: 16px;
   font-family: Geometria;
@@ -170,7 +177,6 @@ html {
   text-transform: uppercase;
   display: block;
   color: inherit;
-  cursor: pointer;
 }
 
 .header__item {
@@ -736,6 +742,9 @@ html {
   }
 }
 
+.footer__social {
+  cursor: pointer;
+}
 
 .footer__link {
   width: fit-content;
@@ -744,6 +753,7 @@ html {
   text-decoration: none;
   display: block;
   margin: .375rem 0;
+  cursor: pointer;
 }
 .footer__link:last-of-type {
   margin: .375rem 0 0 0;
@@ -900,7 +910,6 @@ input[type=checkbox] {
 .menu__item-text {
   width: fit-content;
 	position: relative;
-	cursor: pointer;
   text-decoration: none;
   color: #ffffff;
   text-shadow: 1px 1px #000000, 1px -1px #000000, -1px 1px #000000, -1px -1px #000000, 0 0 0 rgba(0,0,0,.5);
@@ -926,8 +935,8 @@ input[type=checkbox] {
 .hover-reveal {
 	position: absolute;
 	z-index: -1;
-	width: 200px;
-	height: 280px;
+	width: 363px;
+	height: 488px;
 	top: 0;
 	left: 0;
 	pointer-events: none;
@@ -949,38 +958,6 @@ input[type=checkbox] {
 .hover-reveal__img {
 	background-size: cover;
 	background-position: 50% 50%;
-}
-
-.cursor {
-	display: none;
-}
-
-.credits {
-	align-self: flex-start;
-	padding: 5rem 0 0 0;
-}
-
-.credits a {
-	text-decoration: underline;
-}
-
-@media (any-pointer: fine) {
-	.cursor {
-		position: fixed;
-		top: 0;
-		left: 0;
-		display: block;
-		pointer-events: none;
-	}
-	.cursor__inner {
-		fill: var(--cursor-fill);
-		stroke: var(--cursor-stroke);
-		stroke-width: var(--cursor-stroke-width);
-		opacity: 0.7;
-	}
-	.credits {
-		padding-left: 25vw;
-	}
 }
 
 html.has-scroll-smooth {
