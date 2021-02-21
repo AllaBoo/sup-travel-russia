@@ -4,8 +4,6 @@ import { lerp, getMousePos } from './utils';
 // Track the mouse position
 let mouse = {x: 0, y: 0};
 window.addEventListener('mousemove',  ev => mouse = getMousePos(ev));
-window.addEventListener('scroll',  ev => mouse = getMousePos(ev));
-window.addEventListener('wheel',  ev => mouse = getMousePos(ev));
 export default class Cursor {
     constructor(el) {
         this.DOM = {el: el};

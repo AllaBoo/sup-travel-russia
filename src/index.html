@@ -23,7 +23,7 @@
         </button>
         <div class="container-horizontal">
           <img class="logo__img" src="<%=require('./images/logos/logo.png').default %>" alt="Логотип Sup Travel Russia">
-          <h1 class="logo__text">SUP Travel<span class="span">Russia</span></h1>
+          <p class="logo__text">SUP Travel<span class="span">Russia</span></p>
         </div>
       </div>
       <div class="container-horizontal">
@@ -52,31 +52,59 @@
     
     <section class="cower root">
       <div class="slider">
-        <div class="slider__images">
-          <img src="<%=require('./images/slider/sup-sunset.jpg').default %>" class="slider__img">
-          <p class="slider__text">апрель 2019</p>
-          <p class="slider__title">Выездной SUP Тур</p>
-        </div>
+        <ul class="slider__images">
+          <li class="slider__item">
+            <a href="" class="slider__link">
+              <img src="<%=require('./images/slider/sup-sunset.jpg').default %>" class="slider__img" alt="Sup на закате">
+              <img src="<%=require('./images/slider/sup-sunset.jpg').default %>" class="slider__part-img" alt="часть слайдера" id="part-img">
+              <p class="slider__text">апрель 2019</p>
+              <p class="slider__title">Выездной SUP Тур</p>
+            </a>
+          </li>
+          <li class="slider__item">
+            <a href="" class="slider__link">
+              <img src="<%=require('./images/slider/sup-slider-1.jpg').default %>" class="slider__img" alt="Sup на закате">
+              <img src="<%=require('./images/slider/sup-slider-1.jpg').default %>" class="slider__part-img" alt="часть слайдера" id="part-img">
+              <p class="slider__text">май 2020</p>
+              <p class="slider__title">SUP-вечеринка</p>
+            </a>
+          </li>
+          <li class="slider__item">
+            <a href="" class="slider__link">
+              <img src="<%=require('./images/slider/sup-slider-2.jpeg').default %>" class="slider__img" alt="Sup на закате">
+              <img src="<%=require('./images/slider/sup-slider-2.jpeg').default %>" class="slider__part-img" alt="часть слайдера" id="part-img">
+              <p class="slider__text">июль 2020</p>
+              <p class="slider__title">Регата</p>
+            </a>
+          </li>
+          <li class="slider__item">
+            <a href="" class="slider__link">
+              <img src="<%=require('./images/slider/sup-slider-3.jpg').default %>" class="slider__img" alt="Sup на закате">
+              <img src="<%=require('./images/slider/sup-slider-3.jpg').default %>" class="slider__part-img" alt="часть слайдера" id="part-img">
+              <p class="slider__text">сентябрь 2021</p>
+              <p class="slider__title">Закрытие сезона</p>
+            </a>
+          </li>
+        </ul>
         <div class="slider__caption">
           <div class="slider__container">
-            <img src="<%=require('./images/icons/arrow-left.svg').default %>" class="slider__icon">
-            <img src="<%=require('./images/icons/arrow-right.svg').default %>" class="slider__icon">
+            <img src="<%=require('./images/icons/arrow-left.svg').default %>" class="slider__icon" id="prev" alt="листать влево">
+            <img src="<%=require('./images/icons/arrow-right.svg').default %>" class="slider__icon" id="next" alt="листать вправо">
           </div>
           <div class="slider__container">
-            <p class="slider__number">01</p>
-            <progress class="slider__progress"></progress>
-            <p class="slider__number">08</p>
+            <p class="slider__number" id="current-img">01</p>
+            <progress class="slider__progress" min="1" value="1"></progress>
+            <p class="slider__number" id="last-img">08</p>
           </div>
         </div>
       </div>
-      <img src="<%=require('./images/slider/sup-sunset.jpg').default %>" class="slider__part-img">
       <div class="cower__column">
         <h1 class="cower__title">SUP&nbsp;Travel<span class="cower__span">Russia</span></h1>
         <p class="text cower__text">Сапсёрфинг — водный вид спорта, разновидность сёрфинга, в котором серфер.</p>
       </div>
       <div class="scroll">
-        <img src="<%=require('./images/decorative/scroll.svg').default %>" class="rotate">
-        <img src="<%=require('./images/decorative/arrow-down-huge.svg').default %>">
+        <img src="<%=require('./images/decorative/scroll.svg').default %>" class="rotate" alt="листайте вниз">
+        <img src="<%=require('./images/decorative/arrow-down-huge.svg').default %>" alt="стрелка вниз">
       </div>
     </section>
 
@@ -125,7 +153,7 @@
         </div>
 
       </div>
-      <img class="divider" src="<%=require('./images/decorative/divider-bottom.svg').default %>">
+      <img class="divider" src="<%=require('./images/decorative/divider-bottom.svg').default %>" alt="разделитель">
     </section>
 
     <section class="section">
@@ -149,7 +177,7 @@
     </section>
 
     <footer class="footer root">
-      <img class="divider" src="<%=require('./images/decorative/divider-footer.svg').default %>">
+      <img class="divider" src="<%=require('./images/decorative/divider-footer.svg').default %>" alt="разделитель">
       <div class="footer__row footer__row_top">
         <div class="container-horizontal">
           <img class="logo__img" src="<%=require('./images/logos/logo.png').default %>" alt="Логотип Sup Travel Russia">
@@ -237,8 +265,8 @@
             </div>
             <div class="popup__input-container">
               <p class="popup__input-name">Ваш телефон</p>
-              <input type="tel" id="fio" class="popup__input" placeholder="+7 (XXX) XXX-XX-XX" required>
-              <span class="popup__error-message" id="error-fio"></span>
+              <input type="tel" id="telephone" class="popup__input" placeholder="+7 (XXX) XXX-XX-XX" required>
+              <span class="popup__error-message" id="error-telephone"></span>
             </div>
           </div>
           <div class="popup__input-container popup__input-container_max">
@@ -249,6 +277,7 @@
           <input type="checkbox" id="agre" name="agre" class="popup__checkbox" checked>
           <label for="agre" class="popup__label">Согласие на обработку <a href="" target="_blank" class="popup__link">персональных данных</a></label>
           <button type="submit" class="button popup__button button_desabled" disabled="disabled" >Заказать</button> 
+        </form>
       </div>
     </div>
     <svg class="cursor" width="86" height="86" viewBox="0 0 86 86" fill="none">
