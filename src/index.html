@@ -46,17 +46,17 @@
             </li>
           </ul>
         </nav>
-        <button class="button" id="leadButton">Перезвоним<span class="span">Вам</span></button>
+        <button class="button header__button" id="leadButton">Перезвоним<span class="span">Вам</span></button>
       </div>
     </header>
-    
+    <div id="locomotiveScroll">
     <section class="cower root">
       <div class="slider">
         <ul class="slider__images">
           <li class="slider__item">
             <a href="" class="slider__link">
               <img src="<%=require('./images/slider/sup-sunset.jpg').default %>" class="slider__img" alt="Sup на закате">
-              <img src="<%=require('./images/slider/sup-sunset.jpg').default %>" class="slider__part-img" alt="часть слайдера" id="part-img">
+              <img src="<%=require('./images/slider/sup-sunset.jpg').default %>" class="slider__part-img" alt="часть слайдера">
               <p class="slider__text">апрель 2019</p>
               <p class="slider__title">Выездной SUP Тур</p>
             </a>
@@ -64,7 +64,7 @@
           <li class="slider__item">
             <a href="" class="slider__link">
               <img src="<%=require('./images/slider/sup-slider-1.jpg').default %>" class="slider__img" alt="Sup на закате">
-              <img src="<%=require('./images/slider/sup-slider-1.jpg').default %>" class="slider__part-img" alt="часть слайдера" id="part-img">
+              <img src="<%=require('./images/slider/sup-slider-1.jpg').default %>" class="slider__part-img" alt="часть слайдера">
               <p class="slider__text">май 2020</p>
               <p class="slider__title">SUP-вечеринка</p>
             </a>
@@ -72,7 +72,7 @@
           <li class="slider__item">
             <a href="" class="slider__link">
               <img src="<%=require('./images/slider/sup-slider-2.jpeg').default %>" class="slider__img" alt="Sup на закате">
-              <img src="<%=require('./images/slider/sup-slider-2.jpeg').default %>" class="slider__part-img" alt="часть слайдера" id="part-img">
+              <img src="<%=require('./images/slider/sup-slider-2.jpeg').default %>" class="slider__part-img" alt="часть слайдера">
               <p class="slider__text">июль 2020</p>
               <p class="slider__title">Регата</p>
             </a>
@@ -80,7 +80,7 @@
           <li class="slider__item">
             <a href="" class="slider__link">
               <img src="<%=require('./images/slider/sup-slider-3.jpg').default %>" class="slider__img" alt="Sup на закате">
-              <img src="<%=require('./images/slider/sup-slider-3.jpg').default %>" class="slider__part-img" alt="часть слайдера" id="part-img">
+              <img src="<%=require('./images/slider/sup-slider-3.jpg').default %>" class="slider__part-img" alt="часть слайдера">
               <p class="slider__text">сентябрь 2021</p>
               <p class="slider__title">Закрытие сезона</p>
             </a>
@@ -93,7 +93,7 @@
           </div>
           <div class="slider__container">
             <p class="slider__number" id="current-img">01</p>
-            <progress class="slider__progress" min="1" value="1"></progress>
+            <progress class="slider__progress" value="1"></progress>
             <p class="slider__number" id="last-img">08</p>
           </div>
         </div>
@@ -160,6 +160,26 @@
       <div class="title root">
         <h2 class="title__shadow">Медиа галерея</h2>
         <p class="title__text root">Медиа галерея</p>
+        <div class="tiles tiles--oneline" id="grid2">
+          <div class="tiles__wrap">
+            <div class="tiles__line" data-scroll data-scroll-speed="2" data-scroll-target="#grid2" data-scroll-direction="horizontal">
+              <div class="tiles__line-img"></div>
+              <div class="tiles__line-img"></div>
+              <div class="tiles__line-img"></div>
+              <div class="tiles__line-img"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tiles tiles--oneline" id="grid3">
+          <div class="tiles__wrap">
+            <div class="tiles__line" data-scroll data-scroll-speed="-2" data-scroll-target="#grid3" data-scroll-direction="horizontal">
+              <div class="tiles__line-img row2"></div>
+              <div class="tiles__line-img row2"></div>
+              <div class="tiles__line-img row2"></div>
+              <div class="tiles__line-img row2"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -244,14 +264,13 @@
         </div>
         
       </div>
-
       <div class="footer__row footer__row_low">
         <a href="" class="footer__link">Политика конфиденциальности</a>
         <a href="" class="footer__link">Карта сайта</a>
         <a href="" class="footer__link">ИП Залошков Денис Владимирович</a>
       </div>
-
     </footer>
+    <div class="crutch"></div>
     <div id="leadPopup" class="popup">
       <div class="popup__content">
         <img src="<%=require('./images/icons/close-white.svg').default %>" alt="Иконка закрытия окна" class="popup__close">
@@ -280,6 +299,7 @@
         </form>
       </div>
     </div>
+  </div>
     <script src=" <%= htmlWebpackPlugin.files.js %>"></script>
   </body>
 </html>
