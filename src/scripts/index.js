@@ -24,15 +24,16 @@ closeButton.addEventListener('click', () => {
 // menu (<nav> element)
 const menuEl = document.querySelector('#locomotiveScroll');
 
-// preload the images set as data attrs in the menu items
-preloader('.menu__item').then(() => {
-    // initialize the smooth scroll
-    const scroll = new LocomotiveScroll({el: menuEl, smooth: true, scrollFromAnywhere: true, repeat: true});
+if (window.screen.availWidth > 768) {
+		// preload the images set as data attrs in the menu items
+		preloader('.menu__item').then(() => {
+				// initialize the smooth scroll
+				const scroll = new LocomotiveScroll({el: menuEl, smooth: true, scrollFromAnywhere: true, repeat: true});
 
-    // initialize menu
-    new Menu(menuEl);
-});
-
+				// initialize menu
+				new Menu(menuEl);
+		});
+}
 (function() {
 
 	function init(item) {
