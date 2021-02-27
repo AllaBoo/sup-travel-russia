@@ -1,0 +1,7 @@
+.bread-crumbs__link {
+  text-decoration: none;
+  color: #808080;
+}
+.bread-crumbs__link:visited {
+  color: #808080;
+}

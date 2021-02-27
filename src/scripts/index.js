@@ -3,11 +3,7 @@ import { Header } from './Header';
 import {preloader} from './preloader';
 import LocomotiveScroll from 'locomotive-scroll';
 import Menu from './menu';
-
-const headerIcon = document.querySelector('.header__icon');
-const leadButton = document.querySelector('#leadButton');
-const leadPopup = document.querySelector('#leadPopup');
-const closeButton = document.querySelector('.popup__close');
+import { headerIcon, leadButton, leadPopup, closeButton } from './constants';
 const header = new Header();
 
 headerIcon.addEventListener('click', () => header.openMenu());

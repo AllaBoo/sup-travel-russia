@@ -1,0 +1,37 @@
+.tour {
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+@media (max-width: 1600px) {
+  .tour {
+    grid-template-columns: 32% 32% 32%;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .tour {
+    grid-template-columns: 49% 49%;
+  }
+}
+@media (max-width: 460px) {
+  .tour {
+    grid-template-columns: 100%;
+  }
+}
+@import url(./__age/tour__age.css);
+@import url(./__complexity-img/tour__complexity-img.css);
+@import url(./__complexity-level/tour__complexity-level.css);
+@import url(./__complexity-text/tour__complexity-text.css);
+@import url(./__complexity/tour__complexity.css);
+@import url(./__name/tour__name.css);
+@import url(./__price/tour__price.css);
+@import url(./__complexity-column/tour__complexity-column.css);
+@import url(./__button/tour__button.css);
+@import url(./__button/_white/tour__button_white.css);
+@import url(./__button/_transparent/tour__button_transparent.css);
+@import url(./__card/tour__card.css);
+@import url(./__buttons/tour__buttons.css);

@@ -1,0 +1,10 @@
+.popup__container-horizontal {
+  justify-content: space-between;
+}
+
+@media (max-width: 650px) {
+  .popup__container-horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

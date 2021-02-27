@@ -1,0 +1,10 @@
+.tour__name {
+  position: relative;
+  width: 171px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 30% 0 0;
+  box-sizing: border-box;
+  z-index: 2;
+}

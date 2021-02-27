@@ -1,0 +1,30 @@
+.button {
+  font-size: .875rem;
+  border: 1px solid #000000;
+  border-radius: 75%;
+  box-sizing: border-box;
+  padding: 0.375rem 2.375rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+.button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.button_desabled {
+  background-color: #ffffff;
+  color: gray;
+}
+.button_desabled:hover { 
+  background-color: #ffffff;
+  color: gray;
+}
+
+@media (max-width: 600px) {
+  .button {
+    padding: 0.375rem 1.25rem;
+  }
+}

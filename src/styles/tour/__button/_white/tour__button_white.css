@@ -1,0 +1,12 @@
+.tour__button_white {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+@media (max-width: 540px) {
+  .tour__button_white {
+    margin-top: 1rem;
+  }
+}

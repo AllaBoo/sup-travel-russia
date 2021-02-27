@@ -49,10 +49,13 @@
     "imagesloaded": "^4.1.4"
   },
   "dependencies": {
+    "@bem/sdk.config": "^0.1.0",
     "babel-polyfill": "^6.26.0",
+    "bem": "^2.0.0",
+    "bem-tools-core": "0.0.3",
     "core-js": "^3.6.5",
-    "path": "^0.12.7",
     "gsap": "^3.3.4",
-    "locomotive-scroll": "^3.5.4"
+    "locomotive-scroll": "^3.5.4",
+    "path": "^0.12.7"
   }
 }

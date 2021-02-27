@@ -1,0 +1,11 @@
+.tour__button_transparent {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+@media (max-width: 540px) {
+  .tour__button_transparent {
+    margin-top: 1rem;
+  }
+}

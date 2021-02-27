@@ -1,0 +1,6 @@
+.bread-crumbs__link_active {
+  color: black;
+}
+.bread-crumbs__link_active:visited {
+  color: black;
+}

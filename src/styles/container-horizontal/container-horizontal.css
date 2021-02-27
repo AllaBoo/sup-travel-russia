@@ -1,0 +1,4 @@
+.container-horizontal {
+  display: flex;
+  align-items: center;
+}

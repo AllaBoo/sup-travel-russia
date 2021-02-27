@@ -1,0 +1,63 @@
+.tour__card {
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 2rem;
+  color: #ffffff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .tour__card {
+    height: 400px;
+  }
+}
+@media (max-width: 850px) {
+  .tour__card {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .tour__card {
+    height: 310px;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 380px) {
+  .tour__card {
+    width: 90%;
+    height: 90vw;
+  }
+}
+.tour__card:nth-child(1) {
+  background-image: url(../../../images/tours/1.jpg);
+}
+.tour__card:nth-child(2) {
+  background-image: url(../../../images/tours/2.jpg);
+}
+.tour__card:nth-child(3) {
+  background-image: url(../../../images/tours/3.jpg);
+}
+.tour__card:nth-child(4) {
+  background-image: url(../../../images/tours/4.jpg);
+}
+.tour__card:nth-child(5) {
+  background-image: url(../../../images/tours/5.jpg);
+}
+
+.tour__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 33.27%, #000000 116.83%);
+}

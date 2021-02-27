@@ -1,0 +1,42 @@
+.section {
+  padding-top: 5.125rem;
+  padding-bottom: 5.125rem; 
+}
+.section:first-of-type {
+  margin-top: 94px;
+}
+@media (max-width: 1300px) {
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px; 
+  }
+}
+@media (max-width: 390px) {
+  .section {
+    padding-top: 16px;
+    padding-bottom: 16px; 
+  }
+}
+
+.section__buttons {
+  width: fit-content;
+  margin: 50px auto 110px;
+}
+
+.section__button {
+  box-sizing: border-box;
+  padding: 10px 18px;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+.section__button_black {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.section__button_white {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
