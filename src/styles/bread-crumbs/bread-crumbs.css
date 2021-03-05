@@ -1,8 +1,15 @@
 .bread-crumbs {
   display: flex;
-  font-size: .75rem
+  font-size: .75rem;
+  margin-top: 2.5rem;
 }
 
+@media (max-width: 768px) {
+  .bread-crumbs {
+    margin-top: 1.5rem;
+  }
+  
+}
 @import url(./__link/bread-crumbs__link.css);
 @import url(./__link/_active/bread-crumbs__link_active.css);
 @import url(./_gray/bread-crumbs_gray.css);

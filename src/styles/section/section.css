@@ -1,26 +1,25 @@
 .section {
-  padding-top: 5.125rem;
-  padding-bottom: 5.125rem; 
+  margin-top: 5.125rem;
+  margin-bottom: 5.125rem; 
+  position: relative;
 }
-.section:first-of-type {
-  margin-top: 94px;
-}
+
 @media (max-width: 1300px) {
   .section {
-    padding-top: 40px;
-    padding-bottom: 40px; 
+    margin-top: 40px;
+    margin-bottom: 40px; 
   }
 }
 @media (max-width: 390px) {
   .section {
-    padding-top: 16px;
-    padding-bottom: 16px; 
+    margin-top: 16px;
+    margin-bottom: 16px; 
   }
 }
 
 .section__buttons {
   width: fit-content;
-  margin: 50px auto 110px;
+  margin: 50px auto 0;
 }
 
 .section__button {
@@ -39,4 +38,8 @@
   background-color: #ffffff;
   color: #000000;
   border: 1px solid #000000;
+}
+
+.section__heading {
+  margin-top: 3rem;
 }

@@ -7,221 +7,169 @@
     <meta name="Author" content="Алла Бутеева" />
     <title>SUP Travel Russia</title>
     <link rel="icon" href="<%=require('./images/logos/favicon.png').default %>">
-    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.index.css %>">
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.program.css %>">
   </head>
 
-  <body class="body">
-    <header class="header root">
-      <div class="container-horizontal">
-        <button class="header__icon"><img src="<%=require('./images/icons/menu.svg').default %>" alt="Иконка открыть меню" id="first-icon">
-          <template id="icon-open">
-            <img src="<%=require('./images/icons/menu.svg').default %>" alt="Иконка открыть меню" class="header__icon" id="open">
-          </template>
-          <template id="icon-close">
-            <img src="<%=require('./images/icons/close-small-black.svg').default %>" alt="Иконка закрыть" class="header__icon" id="close">
-          </template>
-        </button>
+  <body class="body"> 
+    <div class="cower root">
+      <header class="header header_transparent">
         <div class="container-horizontal">
-          <img class="logo__img" src="<%=require('./images/logos/logo.png').default %>" alt="Логотип Sup Travel Russia">
-          <p class="logo__text">SUP Travel<span class="span">Russia</span></p>
+          <button class="header__icon"><img src="<%=require('./images/icons/menu.svg').default %>" alt="Иконка открыть меню" id="first-icon">
+            <template id="icon-open">
+              <img src="<%=require('./images/icons/menu.svg').default %>" alt="Иконка открыть меню" class="header__icon" id="open">
+            </template>
+            <template id="icon-close">
+              <img src="<%=require('./images/icons/close-small-black.svg').default %>" alt="Иконка закрыть" class="header__icon" id="close">
+            </template>
+          </button>
+          <div class="container-horizontal">
+            <img class="logo__img" src="<%=require('./images/logos/logo.png').default %>" alt="Логотип Sup Travel Russia">
+            <p class="logo__text">SUP Travel<span class="span">Russia</span></p>
+          </div>
         </div>
-      </div>
-      <div class="container-horizontal">
-        <nav class="nav header__menu">
-          <ul class="nav__list header__nav">
-            <li class="header__item">
-              <a class="header__link" href="">Услуги&nbsp;и&nbsp;цены</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="">Бронирование</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="">О&nbsp;нас</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="">F.A.Q.</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="button header__button" id="leadButton">Перезвоним<span class="span">Вам</span></button>
-      </div>
-    </header>
-    <div id="leadPopup" class="popup">
-      <div class="popup__content">
-        <img src="<%=require('./images/icons/close-white.svg').default %>" alt="Иконка закрытия окна" class="popup__close">
-        <h3 class="popup__title">Закажите звонок</h3>
-        <form class="popup__form" id="login-form">
-          <div class="container-horizontal popup__container-horizontal">
-            <div class="popup__input-container">
-              <p class="popup__input-name">Ваше имя</p>
-              <input type="text" id="fio" class="popup__input" placeholder="Введите имя" required>
-              <span class="popup__error-message" id="error-fio"></span>
+        <div class="container-horizontal">
+          <nav class="nav header__menu">
+            <ul class="nav__list header__nav">
+              <li class="header__item">
+                <a class="header__link" href="">Услуги&nbsp;и&nbsp;цены</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="">Бронирование</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="">О&nbsp;нас</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="">F.A.Q.</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="button header__button" id="leadButton">Перезвоним<span class="span">Вам</span></button>
+        </div>
+      </header>
+      <div class="cower__column">
+        <div class="bread-crumbs bread-crumbs_white">
+          <a href="" class="bread-crumbs__link">Главная</a>
+          <p class="bread-crumbs__text">–</p>
+          <a href="" class="bread-crumbs__link bread-crumbs__link_active">Выездные SUP туры</a>
+        </div>
+        <div class="container-horizontal cower__container">
+          <h1 class="heading white cower__heading">Выездной<span class="span">SUP тур</span></h1>
+          <div class="complexity">
+            <p class="complexity__age">2+</p>
+            <div class="container-horizontal">
+              <img class="complexity__img" src="<%=require('./images/decorative/drop-white.svg').default %>">
+              <img class="complexity__img" src="<%=require('./images/decorative/drop-white.svg').default %>">
+              <img class="complexity__img" src="<%=require('./images/decorative/drop-white.svg').default %>">
+              <img class="complexity__img" src="<%=require('./images/decorative/drop-transparent.svg').default %>">
+              <img class="complexity__img" src="<%=require('./images/decorative/drop-transparent.svg').default %>">
             </div>
-            <div class="popup__input-container">
-              <p class="popup__input-name">Ваш телефон</p>
-              <input type="tel" id="telephone" class="popup__input" placeholder="+7 (XXX) XXX-XX-XX" required>
-              <span class="popup__error-message" id="error-telephone"></span>
-            </div>
+            <p class="complexity__text">Уровень&nbsp;сложности</p>
+            <p class="complexity__level">Средний</p>
           </div>
-          <div class="popup__input-container popup__input-container_max">
-            <p class="popup__input-name">Сообщение</p>
-            <input type="tel" id="message" class="popup__input">
-            <span class="popup__error-message" id="error-message"></span>
-          </div>
-          <input type="checkbox" id="agre" name="agre" class="popup__checkbox" checked>
-          <label for="agre" class="popup__label">Согласие на обработку <a href="" target="_blank" class="popup__link">персональных данных</a></label>
-          <button type="submit" class="button popup__button button_desabled" disabled="disabled" >Заказать</button> 
-        </form>
+        </div>
+        <div class="scroll cower__scroll">
+          <img src="<%=require('./images/decorative/scroll-white.svg').default %>" class="rotate" alt="листайте вниз">
+          <img src="<%=require('./images/decorative/arrow-down-huge-white.svg').default %>" alt="стрелка вниз">
+        </div>
       </div>
     </div>
-    <div id="locomotiveScroll">
-    <section class="welcome root">
-      <div class="slider">
-        <ul class="slider__images">
-          <li class="slider__item">
-            <a href="" class="slider__link">
-              <img src="<%=require('./images/slider/sup-sunset.jpg').default %>" class="slider__img" alt="Sup на закате">
-              <img src="<%=require('./images/slider/sup-sunset.jpg').default %>" class="slider__part-img" alt="часть слайдера">
-              <p class="slider__text">апрель 2019</p>
-              <p class="slider__title">Выездной SUP Тур</p>
-            </a>
-          </li>
-          <li class="slider__item">
-            <a href="" class="slider__link">
-              <img src="<%=require('./images/slider/sup-slider-1.jpg').default %>" class="slider__img" alt="Sup на закате">
-              <img src="<%=require('./images/slider/sup-slider-1.jpg').default %>" class="slider__part-img" alt="часть слайдера">
-              <p class="slider__text">май 2020</p>
-              <p class="slider__title">SUP-вечеринка</p>
-            </a>
-          </li>
-          <li class="slider__item">
-            <a href="" class="slider__link">
-              <img src="<%=require('./images/slider/sup-slider-2.jpeg').default %>" class="slider__img" alt="Sup на закате">
-              <img src="<%=require('./images/slider/sup-slider-2.jpeg').default %>" class="slider__part-img" alt="часть слайдера">
-              <p class="slider__text">июль 2020</p>
-              <p class="slider__title">Регата</p>
-            </a>
-          </li>
-          <li class="slider__item">
-            <a href="" class="slider__link">
-              <img src="<%=require('./images/slider/sup-slider-3.jpg').default %>" class="slider__img" alt="Sup на закате">
-              <img src="<%=require('./images/slider/sup-slider-3.jpg').default %>" class="slider__part-img" alt="часть слайдера">
-              <p class="slider__text">сентябрь 2021</p>
-              <p class="slider__title">Закрытие сезона</p>
-            </a>
-          </li>
-        </ul>
-        <div class="slider__caption">
-          <div class="slider__container">
-            <img src="<%=require('./images/icons/arrow-left.svg').default %>" class="slider__icon" id="prev" alt="листать влево">
-            <img src="<%=require('./images/icons/arrow-right.svg').default %>" class="slider__icon" id="next" alt="листать вправо">
-          </div>
-          <div class="slider__container">
-            <p class="slider__number" id="current-img">01</p>
-            <progress class="slider__progress" value="1"></progress>
-            <p class="slider__number" id="last-img">08</p>
-          </div>
+
+    <section class="program section root">
+      <div class="program__description">
+        <p class="program__text">SUP-туры выходного дня проходят еженедельно по субботам и воскресеньям в Москве, Подмосковье, Тверской области и Санкт Петербурге. </p>
+        <p class="program__text">Тур длится 5-6 часов. Обычно мы проходим 16-25 км. В стоимость входит обед и трансфер с финиша на старт.</p>
+        <p class="program__paragraph">Сёрфинг — это водный вид спорта, в котором человек едет на передней или нижней части движущейся волны, которая обычно движется в сторону берега. Волны, пригодные для серфинга, в основном находятся в океане и море, но могут быть найдены в озёрах или реках в виде «стоячей волны» или приливной волны.</p>
+      </div>
+      <div class="program__infographics">
+        <div class="program__infographic-item">
+          <img src="<%=require('./images/icons/complexity.svg').default %>" class="program__icon" alt="иконка уровень сложности">
+          <p class="program__param">Уровень&nbsp;сложности:<span class="span bold">Высокий</span></p>
+        </div>
+        <div class="program__infographic-item">
+          <img src="<%=require('./images/icons/time.svg').default %>" class="program__icon" alt="иконка время">
+          <p class="program__param">Длительность:<span class="span bold">4 часа</span></p>
+        </div>
+        <div class="program__infographic-item">
+          <img src="<%=require('./images/icons/age.svg').default %>" class="program__icon" alt="иконка возраст">
+          <p class="program__param">Возраст&nbsp;участия:<span class="span bold">старше 18 лет</span></p>
+        </div>
+        <div class="program__infographic-item">
+          <img src="<%=require('./images/icons/location.svg').default %>" class="program__icon" alt="иконка локация">
+          <p class="program__param">Локация:<span class="span bold">Звенигород</span></p>
+        </div>
+        <div class="program__infographic-item">
+          <img src="<%=require('./images/icons/route.svg').default %>" class="program__icon" alt="иконка км">
+          <p class="program__param">Протяженность:<span class="span bold">16 км</span></p>
+        </div>
+        <div class="program__infographic-item">
+          <img src="<%=require('./images/icons/price.svg').default %>" class="program__icon" alt="иконка цена">
+          <p class="program__param">Цена:<span class="span bold"> 3 550₽</span></p>
         </div>
       </div>
-      <div class="welcome__column">
-        <h1 class="heading welcome__title black">SUP&nbsp;Travel<span class="heading__span white">Russia</span></h1>
-        <p class="text welcome__text">Сапсёрфинг — водный вид спорта, разновидность сёрфинга, в котором серфер.</p>
-      </div>
-      <div class="scroll section__scroll">
-        <img src="<%=require('./images/decorative/scroll.svg').default %>" class="rotate" alt="листайте вниз">
-        <img src="<%=require('./images/decorative/arrow-down-huge.svg').default %>" alt="стрелка вниз">
-      </div>
     </section>
+
 
     <main class="section root">
-      <h2 class="main-nav__heading">Основные <span class="span">услуги</span></h2>
-      <nav class="menu">
-        <a class="menu__item" data-img="<%=require('./images/sup1.jpg').default %>">
-          <span class="menu__item-text">Прогулки&nbsp;на&nbsp;SUP</span>
-        </a>
-        <a class="menu__item" data-img="<%=require('./images/sup2.jpg').default %>">
-          <span class="menu__item-text">Выездные SUP&nbsp;туры</span>
-        </a>
-        <a class="menu__item" data-img="<%=require('./images/sup3.jpg').default %>>">
-          <span class="menu__item-text">Йога на SUP</span>
-        </a>
-        <a class="menu__item" data-img="<%=require('./images/sup4.jpg').default %>">
-          <span class="menu__item-text">Аренда SUP&nbsp;оборудования</span>
-        </a>
-        <a class="menu__item" data-img="<%=require('./images/sup6.jpg').default %>">
-          <span class="menu__item-text">Мероприятия</span>
-        </a>
-      </nav>
-    </main>
-
-    <section class="infographics">
-      <p class="infographics__title root">Что SUP-бординг Вам&nbsp;гарантирует?</p>
-      <div class="infographics__container root">
-
-        <div class="infographics__card">
-          <img class="infographics__img" src="<%=require('./images/icons/body.svg').default %>" alt="Иконка здоровое тело">
-          <h3 class="infographics__subtitle">Здоровое тело</h3>
-          <p class="infographics__text">Гребля на доске с веслом отлично подойдет для прокачки всех групп мышц, а в особенности плеч, рук и пресса. Также, активность способствует улучшению координации тела&nbsp;и&nbsp;выносливости.</p>
-        </div>
-
-        <div class="infographics__card">
-          <img class="infographics__img" src="<%=require('./images/icons/harmony.svg').default %>" alt="Иконка гармония">
-          <h3 class="infographics__subtitle">Гармония с собой</h3>
-          <p class="infographics__text">Катание на SUP сродни медитации: оно позволяет отбрасывать  все негативные эмоции, очищать мысли и принимать взвешенные важные&nbsp;решения.</p>
-        </div>
-
-        <div class="infographics__card">
-          <img class="infographics__img" src="<%=require('./images/icons/impression.svg').default %>" alt="Иконка впечталения">
-          <h3 class="infographics__subtitle">Незабываемые впечатления</h3>
-          <p class="infographics__text">Каждый маршрут на SUP всегда оборачивается интересным приключением, в котором гарантированно будет масса новых позитивных эмоций и много красивых&nbsp;фотографий.</p>
-        </div>
-
-      </div>
-
-    </section>
-
-    <section class="section">
-      <div class="title root">
-        <h2 class="title__shadow">Медиа галерея</h2>
-        <p class="title__text root">Медиа галерея</p>
-        <div class="tiles tiles--oneline" id="grid2">
-          <div class="tiles__wrap">
-            <div class="tiles__line" data-scroll data-scroll-speed="2" data-scroll-target="#grid2" data-scroll-direction="horizontal">
-              <div class="tiles__line-img"></div>
-              <div class="tiles__line-img"></div>
-              <div class="tiles__line-img"></div>
-              <div class="tiles__line-img"></div>
-            </div>
-          </div>
-        </div>
-        <div class="tiles tiles--oneline" id="grid3">
-          <div class="tiles__wrap">
-            <div class="tiles__line" data-scroll data-scroll-speed="-2" data-scroll-target="#grid3" data-scroll-direction="horizontal">
-              <div class="tiles__line-img row2"></div>
-              <div class="tiles__line-img row2"></div>
-              <div class="tiles__line-img row2"></div>
-              <div class="tiles__line-img row2"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section root">
       <div class="title">
-        <h2 class="title__shadow">Наши партнеры</h2>
-        <p class="title__text">Наши партнеры</p>
+        <h2 class="title__shadow">Программа тура</h2>
+        <p class="title__text">Программа тура</p>
       </div>
-      <div class="partners">
-        <img class="partners__logo" src="<%=require('./images/logos/partners/69SLAM.jpg').default %>" alt="Логотип 69SLAM">
-        <img class="partners__logo" src="<%=require('./images/logos/partners/Herschel.jpg').default %>" alt="Логотип Herschel">
-        <img class="partners__logo" src="<%=require('./images/logos/partners/ORTLIEB.jpg').default %>" alt="Логотип ORTLIEB">
-        <img class="partners__logo" src="<%=require('./images/logos/partners/Traektoria.jpg').default %>" alt="Логотип Траектория">
+      <img src="<%=require('./images/icons/to-left.svg').default %>" class="timeline__icon timeline__icon_left" alt="иконка влево">
+      <div class="timeline">
+        <div class="timeline__item">
+          <p class="timeline__time">14:00 - 15:00</p>
+          <p class="timeline__action">Cбор участников</p>
+        </div>
+        <img src="<%=require('./images/icons/further.svg').default %>" class="timeline__further" alt="иконка далее">
+        <div class="timeline__item">
+          <p class="timeline__time">15:00 - 15:15</p>
+          <p class="timeline__action">Трансфер</p>
+        </div>
+        <img src="<%=require('./images/icons/further.svg').default %>" class="timeline__further" alt="иконка далее">
+        <div class="timeline__item">
+          <p class="timeline__time">15:15</p>
+          <p class="timeline__action">Разминка и инструктаж</p>
+        </div>
+        <img src="<%=require('./images/icons/further.svg').default %>" class="timeline__further" alt="иконка далее">
+        <div class="timeline__item">
+          <p class="timeline__time">16:00</p>
+          <p class="timeline__action">Спуск на воду</p>
+        </div>
+        <img src="<%=require('./images/icons/further.svg').default %>" class="timeline__further" alt="иконка далее">
+        <div class="timeline__item">
+          <p class="timeline__time">16:15</p>
+          <p class="timeline__action">Прогулка</p>
+        </div>
+        <img src="<%=require('./images/icons/further.svg').default %>" class="timeline__further" alt="иконка далее">
+        <div class="timeline__item">
+          <p class="timeline__time">17:30</p>
+          <p class="timeline__action">Йога на sup</p>
+        </div>
+        <img src="<%=require('./images/icons/further.svg').default %>" class="timeline__further" alt="иконка далее">
+        <div class="timeline__item">
+          <p class="timeline__time">19:30</p>
+          <p class="timeline__action">Ланч</p>
+        </div>
+        <img src="<%=require('./images/icons/further.svg').default %>" class="timeline__further" alt="иконка далее">
+        <div class="timeline__item">
+          <p class="timeline__time">20:00 - 21:00</p>
+          <p class="timeline__action">Трансфер</p>
+        </div>
+        <img src="<%=require('./images/icons/further.svg').default %>" class="timeline__further" alt="иконка далее">
+        <div class="timeline__item">
+          <p class="timeline__time">21:00</p>
+          <p class="timeline__action">Окончание программы</p>
+        </div>
       </div>
-    </section>
+      <img src="<%=require('./images/icons/to-right.svg').default %>" class="timeline__icon timeline__icon_right" alt="иконка вправо">
+      <div class="section__buttons">
+        <a href="" class="section__button section__button_black">Забронировать</a>
+      </div>
+    </main>
 
     <footer class="footer root">
       <div class="footer__row footer__row_top">
@@ -296,7 +244,34 @@
         <a href="" class="footer__link">ИП Залошков Денис Владимирович</a>
       </div>
     </footer>
-    <div class="crutch"></div>
+    <div id="leadPopup" class="popup">
+      <div class="popup__content">
+        <img src="<%=require('./images/icons/close-white.svg').default %>" alt="Иконка закрытия окна" class="popup__close">
+        <h3 class="popup__title">Закажите звонок</h3>
+        <form class="popup__form" id="login-form">
+          <div class="container-horizontal popup__container-horizontal">
+            <div class="popup__input-container">
+              <p class="popup__input-name">Ваше имя</p>
+              <input type="text" id="fio" class="popup__input" placeholder="Введите имя" required>
+              <span class="popup__error-message" id="error-fio"></span>
+            </div>
+            <div class="popup__input-container">
+              <p class="popup__input-name">Ваш телефон</p>
+              <input type="tel" id="telephone" class="popup__input" placeholder="+7 (XXX) XXX-XX-XX" required>
+              <span class="popup__error-message" id="error-telephone"></span>
+            </div>
+          </div>
+          <div class="popup__input-container popup__input-container_max">
+            <p class="popup__input-name">Сообщение</p>
+            <input type="tel" id="message" class="popup__input">
+            <span class="popup__error-message" id="error-message"></span>
+          </div>
+          <input type="checkbox" id="agre" name="agre" class="popup__checkbox" checked>
+          <label for="agre" class="popup__label">Согласие на обработку <a href="" target="_blank" class="popup__link">персональных данных</a></label>
+          <button type="submit" class="button popup__button button_desabled" disabled="disabled" >Заказать</button> 
+        </form>
+      </div>
+    </div>
   </div>
     <script src=" <%= htmlWebpackPlugin.files.js %>"></script>
   </body>

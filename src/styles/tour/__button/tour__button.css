@@ -1,12 +1,13 @@
 .tour__button {
-  font-size: 1rem;
+  font-size: 12px;
   box-shadow: none;
   box-sizing: border-box;
   padding: .625rem 1.125rem;
   z-index: 2;
 }
-@media (max-width: 850px) {
+
+@media (max-width: 1439px) {
   .tour__button {
-    padding: .5rem 1.125rem;
+    padding: 8px 12px;
   }
 }

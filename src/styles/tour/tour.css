@@ -17,16 +17,12 @@
     grid-template-columns: 49% 49%;
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 550px) {
   .tour {
     grid-template-columns: 100%;
   }
 }
-@import url(./__age/tour__age.css);
-@import url(./__complexity-img/tour__complexity-img.css);
-@import url(./__complexity-level/tour__complexity-level.css);
-@import url(./__complexity-text/tour__complexity-text.css);
-@import url(./__complexity/tour__complexity.css);
+
 @import url(./__name/tour__name.css);
 @import url(./__price/tour__price.css);
 @import url(./__complexity-column/tour__complexity-column.css);
@@ -35,3 +31,5 @@
 @import url(./__button/_transparent/tour__button_transparent.css);
 @import url(./__card/tour__card.css);
 @import url(./__buttons/tour__buttons.css);
+@import url(./__complexity/tour__complexity.css);
+@import url(../complexity/complexity.css);

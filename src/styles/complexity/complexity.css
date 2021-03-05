@@ -1,0 +1,15 @@
+.complexity {
+  margin: 0;
+  font-size: .75rem;
+  z-index: 2;
+}
+@media (max-width: 460px) {
+  .complexity  {
+    font-size: 1rem;;
+  }
+}
+
+@import url(./__age/complexity__age.css);
+@import url(./__img/complexity__img.css);
+@import url(./__level/complexity__level.css);
+@import url(./__text/complexity__text.css);

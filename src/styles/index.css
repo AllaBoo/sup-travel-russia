@@ -5,7 +5,7 @@
 @import url(./section/section.css);
 @import url(./body/body.css);
 @import url(./span/span.css);
-@import url(./cower/cower.css);
+@import url(./welcome/welcome.css);
 @import url(./slider/slider.css);
 @import url(./scroll/scroll.css);
 @import url(./main-menu/main-menu.css);
@@ -48,6 +48,7 @@ a:hover button:hover {
 html {
   font-size: 16px;
   font-family: Geometria;
+  letter-spacing: -0.05em;
 }
 @media screen and (max-width: 1024px) {
   html {

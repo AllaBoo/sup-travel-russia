@@ -54,6 +54,10 @@
 
 .footer__social {
   cursor: pointer;
+  margin: 10px 0 10px 16px;
+}
+.footer__social:first-of-type {
+  margin-left: 0;
 }
 
 .footer__link {
@@ -68,6 +72,7 @@
 .footer__link:last-of-type {
   margin: .375rem 0 0 0;
 }
+
 .footer__link:visited {
   color: inherit;
 }
@@ -92,8 +97,8 @@
 
 .footer__icon {
   fill: black;
-  margin: 10px 0 10px 16px;
 }
+
 .footer__icon:hover {
   fill: #F79E1B;
 }

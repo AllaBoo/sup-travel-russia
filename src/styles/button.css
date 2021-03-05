@@ -7,7 +7,7 @@
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 .button:hover {
@@ -27,4 +27,8 @@
   .button {
     padding: 0.375rem 1.25rem;
   }
+}
+
+.button_booking {
+  margin: 1rem auto;
 }

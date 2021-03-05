@@ -7,14 +7,13 @@
   z-index: 3;
   color: #000000;
   width: 100%;
+}
+.header_white {
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
-}
-.header_white {
-  background-color: #ffffff;
 }
 .header_transparent {
   background-color: transparent;
@@ -42,7 +41,7 @@
 
 .header__menu_opened {
   position: fixed;
-  top: 5.875rem;
+  top: 5.25rem;
   left: 0;
   background-color: #ffffff;
 }
@@ -65,6 +64,9 @@
 @media (max-width: 768px) {
   .header__nav  {
     display: none;
+  }
+  .header {
+    padding-top: .5rem;
   }
 }
 
@@ -96,6 +98,9 @@
 @media (max-width: 1025px) {
   .header__link   {
     font-size: .75rem;
+  }
+  .header {
+    padding-top: 1rem;
   }
 }
 .header__item {
@@ -157,5 +162,14 @@
 @media (max-width: 768px) {
   .header__icon {
     display: block;
+  }
+}
+
+.header__back {
+  height: 112px;
+}
+@media (max-width: 1025px) {
+  .header__back {
+    height: 82px;
   }
 }

@@ -11,6 +11,8 @@ module.exports = {
   entry: {
     index: './src/scripts/index.js',
     tours: './src/scripts/tours.js',
+    program: './src/scripts/program.js',
+    contacts: './src/scripts/contacts.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -103,6 +105,18 @@ module.exports = {
       template: './src/tours.html',
       filename: './tours.html',
       chunks: ['tours'],
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/program.html',
+      filename: './program.html',
+      chunks: ['program'],
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/contacts.html',
+      filename: './contacts.html',
+      chunks: ['contacts'],
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

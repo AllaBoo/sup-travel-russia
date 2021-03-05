@@ -3,16 +3,19 @@
 @import url(./header.css);
 @import url(./popup/popup.css);
 @import url(./button.css);
+@import url(./section/section.css);
 @import url(./root/root.css);
 @import url(./span/span.css);
 @import url(./scroll/scroll.css);
 @import url(./footer/footer.css);
 @import url(./mixins/mixins.css);
 @import url(./bread-crumbs/bread-crumbs.css);
-@import url(./tour/tour.css);
-@import url(./complexity/complexity.css);
 @import url(./heading/heading.css);
-@import url(./section/section.css);
+@import url(./cower/cower.css);
+@import url(./complexity/complexity.css);
+@import url(./title/title.css);
+@import url(./program/program.css);
+@import url(./timeline/timeline.css);
 
 
 @font-face {

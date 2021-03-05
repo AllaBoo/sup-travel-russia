@@ -1,14 +1,23 @@
 .root {
   box-sizing: border-box;
-  padding: 0 9.375rem;
+  padding-left: 9.375rem;
+  padding-right: 9.375rem;
 }
 @media (max-width: 1300px) {
   .root {
-    padding: 0 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media (max-width: 900px) {
+  .root {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 @media (max-width: 390px) {
   .root {
-    padding: 0 16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

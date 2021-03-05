@@ -1,7 +1,5 @@
 .scroll {
   position: absolute;
-  top: 25vh;
-  right: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,5 +12,30 @@
 @media (max-width: 900px) {
   .scroll {
     display: none;
+  }
+}
+
+.cower__scroll {
+  bottom: 100px;
+  right: 2.5rem;
+  z-index: 2;
+}
+
+@media (max-width: 1300px) {
+  .cower__scroll {
+    bottom: 100px;
+    right: 20px; 
+  }
+}
+
+.section__scroll {
+  top: 25vh;
+  right: 2.5rem;
+}
+
+@media (max-width: 1300px) {
+  .section__scroll {
+    top: 25vh;
+    right: 1rem; 
   }
 }
