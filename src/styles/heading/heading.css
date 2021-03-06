@@ -17,6 +17,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+}
+
 .heading__span {
   text-shadow: 1px 1px #000000, 1px -1px #000000, -1px 1px #000000, -1px -1px #000000, 0 0 0 rgba(0,0,0,.5);
   display: block;

@@ -1,0 +1,109 @@
+@import url(./body/body.css);
+@import url(./container-horizontal/container-horizontal.css);
+@import url(./header.css);
+@import url(./popup/popup.css);
+@import url(./button.css);
+@import url(./infographics/infographics.css);
+@import url(./title/title.css);
+@import url(./root/root.css);
+@import url(./scroll/scroll.css);
+@import url(./span/span.css);
+@import url(./footer/footer.css);
+@import url(./mixins/mixins.css);
+@import url(./bread-crumbs/bread-crumbs.css);
+@import url(./heading/heading.css);
+@import url(./section/section.css);
+
+@font-face {
+  font-family: Geometria;
+  font-style:  normal;
+  font-weight: 700;
+  src: url("../fonts/Geometria-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: Geometria;
+  font-style:  normal;
+  font-weight: 400;
+  src: url("../fonts/Geometria-Regular.woff") format("woff");
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+a, button {
+  cursor: url(../images/decorative/cursor.png) 43 43, pointer;
+}
+a:hover button:hover {
+  cursor: url(../images/decorative/cursor.png) 43 43, pointer;
+}
+
+html {
+  font-size: 16px;
+  font-family: Geometria;
+  letter-spacing: -0.05em;
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+} 
+
+.about__container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  margin-top: 2rem;
+}
+@media (max-width: 768px) {
+  .about__container {
+    grid-template-columns: 100%;
+  }
+} 
+.about__text {
+  margin: 0;
+}
+.about__text_medium {
+  font-size: 1.5rem;
+}
+.about__text_small {
+  font-size: 1.25rem;
+}
+.about__text_large {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+.about__margin {
+  width: 70%;
+  margin: 0 auto;
+}
+.about__img {
+  width: 100%;
+  margin: 40px 0;
+}
+
+@media (max-width: 1439px) {
+  .about__margin {
+    width: 80%;
+    margin: 0 auto;
+  }
+} 
+@media (max-width: 1024px) {
+  .about__margin {
+    width: 90%;
+    margin: 0 auto;
+  }
+} 

@@ -13,6 +13,8 @@ module.exports = {
     tours: './src/scripts/tours.js',
     program: './src/scripts/program.js',
     contacts: './src/scripts/contacts.js',
+    about: './src/scripts/about.js',
+    faq: './src/scripts/faq.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -117,6 +119,18 @@ module.exports = {
       template: './src/contacts.html',
       filename: './contacts.html',
       chunks: ['contacts'],
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/about.html',
+      filename: './about.html',
+      chunks: ['about'],
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/faq.html',
+      filename: './faq.html',
+      chunks: ['faq'],
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

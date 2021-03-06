@@ -19,14 +19,17 @@
 
 .infographics__container {
   display: flex;
-  justify-content: space-between;
-  padding-top: 8.125rem;
+  flex-wrap: wrap;
+  padding-top: 2rem;
   padding-bottom: 8.125rem;
 }
 
 .infographics__card {
-  width: 25%;
-  margin-right: 7rem;
+  width: 28%;
+  margin: 2rem 7rem 0 0;
+}
+.infographics__card:nth-of-type(3) {
+  margin-right: 0;
 }
 
 .infographics__subtitle {
@@ -47,12 +50,11 @@
     padding-bottom: 4rem;
   }
   .infographics__card {
-    width: 30%;
     margin-right: 3.5rem;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1221px) {
   .infographics__subtitle {
     min-height: 3rem;
   }
