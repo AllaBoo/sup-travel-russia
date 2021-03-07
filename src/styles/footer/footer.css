@@ -105,3 +105,13 @@
 .crutch {
   height: 150px;
 }
+
+.footer__payment {
+  margin: 8px;
+}
+.footer__payment:last-of-type {
+  margin-right: 0;
+}
+.footer__payment:first-of-type {
+  margin-left: 0;
+}

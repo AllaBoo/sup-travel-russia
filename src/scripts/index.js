@@ -1,21 +1,10 @@
 import '../styles/index.css';
-import { Header } from './Header';
 import {preloader} from './preloader';
 import LocomotiveScroll from 'locomotive-scroll';
 import Menu from './menu';
-import { headerIcon, leadButton, leadPopup, closeButton } from './constants';
-const header = new Header();
+import { setHeaderListeners } from './constants';
 
-headerIcon.addEventListener('click', () => header.openMenu());
-
-leadButton.addEventListener('click', () => {
-  leadPopup.classList.add('popup_opened');
-  document.querySelector('.body').append(leadPopup);
-});
-
-closeButton.addEventListener('click', () => {
-  leadPopup.closest('.popup').classList.remove('popup_opened');
-});
+setHeaderListeners();
 
 // menu (<nav> element)
 const menuEl = document.querySelector('#locomotiveScroll');

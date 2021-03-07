@@ -14,7 +14,6 @@ export class Header {
     this.headerIcon.addEventListener('click', () => this.closeMenu());
     document.querySelector('.header__nav').classList.add('header__nav_opened');
     document.querySelector('.header__menu').classList.add('header__menu_opened');
-    document.querySelector('.body').classList.add('body_overlay');
   }
 
   closeMenu() {
@@ -26,7 +25,6 @@ export class Header {
     this.headerIcon.addEventListener('click', () => this.openMenu());
     document.querySelector('.header__nav').classList.remove('header__nav_opened');
     document.querySelector('.header__menu').classList.remove('header__menu_opened');
-    document.querySelector('.body').classList.remove('body_overlay');
   }
 }
 

@@ -118,8 +118,53 @@
         <p class="title__text">Команда</p>
       </div>
       <div class="team">
-        <img class="infographics__img" src="<%=require('./images/icons/infrastructure.svg').default %>" alt="Иконка персонал">
+        <a class="team__item" id="denis">
+          <img class="team__img" src="<%=require('./images/about/Denis_big.jpg').default %>" alt="Денис">
+          <p class="team__name">ДЕНИС <span class="span">ЗАЛОШКОВ</span></p>
+          <p class="team__about">Операционный директор, <span class="span">Инструктор</span></p>
+        </a>
+        <a class="team__item">
+          <img class="team__img" src="<%=require('./images/about/Galya.jpg').default %>" alt="Галина">
+          <p class="team__name">Галина <span class="span">Биккулова</span></p>
+          <p class="team__about">Креативный директор, <span class="span">Душа комнании</span></p>
+        </a>
+        <a class="team__item">
+          <img class="team__img" src="<%=require('./images/about/Anton.jpg').default %>" alt="инструктор" style="object-position: center;">
+          <p class="team__name">Антон <span class="span">Ценципер</span></p>
+          <p class="team__about">Должность, <span class="span">Описание</span></p>
+        </a>
+        <a class="team__item">
+          <img class="team__img" src="<%=require('./images/about/Vionard_big.jpg').default %>" alt="Вионард">
+          <p class="team__name">Вионард <span class="span">Малхазов</span></p>
+          <p class="team__about">Должность, <span class="span">Описание</span></p>
+        </a>
       </div>
+
+      <div id="teamPopup" class="popup">
+        <div class="popup__content popup__content_team">
+          <img src="<%=require('./images/icons/close-white.svg').default %>" alt="Иконка закрытия окна" class="popup__close">
+          <div class="person">
+            <div class="person__main">
+              <img src="<%=require('./images/about/Denis.jpg').default %>" alt="Денис" class="person__img">
+              <p><span class="bold">Области интересов:</span> SUP, сёрфинг, сноубординг, путешествия, вкусная еда</p>
+              <p class="bold">Сертификаты:</p>
+              <a href="" class="person__link">Сертификат об оказании первой помощи</a>
+              <a href="" class="person__link">Сертификат спасателя на воде</a>
+              <a href="" class="person__link">Сертификат ISA SUP Flat Water</a>  
+            </div>
+            <div class="person__column">
+              <p class="person__name">Денис</p> 
+              <p class="person__name">ЗАЛОШКОВ</p>
+              <p class="person__profession"><span class="bold">Должность</span> Операционный директор, SUP Инструктор</p>
+              <p class="person__description">Денис - основатель, душа и двигатель команды SUP Travel Russia. Он активный и разносторонний, без экстрима и воды его жизнь представить невозможно. </p>
+              <p class="person__description">На протяжение последних 20 лет Денис увлекался сноубордингом, вейкбордингом, горным велосипедом…а последние 10 лет посвятил катанию по воде на доске с веслом. В какой-то момент SUP перестал быть просто хобби, а стал делом всей жизни. Помимо того, многолетний опыт работы в магазине оборудования и экипировки для экстремальных видов спорта обеспечил Денису безупречное знание продукта и понимание о качестве. </p>
+              <p class="person__description">Денис - SUP инструктор высшей категории, который не только обучит Вас правильной технике, но и поможет влюбиться в эту дисциплину. 
+                Если он не на маршруте, Вы всегда сможете найти его на нашей SUP станции, беседующего с гостями. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <footer class="footer root">
@@ -181,10 +226,10 @@
           </div>
           
           <div class="container-horizontal">
-            <img src="<%=require('./images/logos/payment/mastercard.svg').default %>" alt="Логотип MasterCard" class="footer__icon">
-            <img src="<%=require('./images/logos/payment/maestro.svg').default %>" alt="Логотип Maestro" class="footer__icon">
-            <img src="<%=require('./images/logos/payment/visa.svg').default %>" alt="Логотип Visa" class="footer__icon">
-            <img src="<%=require('./images/logos/payment/mir.svg').default %>" alt="Логотип Мир" class="footer__icon">
+            <img src="<%=require('./images/logos/payment/mastercard.svg').default %>" alt="Логотип MasterCard" class="footer__payment">
+            <img src="<%=require('./images/logos/payment/maestro.svg').default %>" alt="Логотип Maestro" class="footer__payment">
+            <img src="<%=require('./images/logos/payment/visa.svg').default %>" alt="Логотип Visa" class="footer__payment">
+            <img src="<%=require('./images/logos/payment/mir.svg').default %>" alt="Логотип Мир" class="footer__payment">
           </div>
         </div>
         
@@ -196,7 +241,7 @@
       </div>
     </footer>
     <div id="leadPopup" class="popup">
-      <div class="popup__content">
+      <div class="popup__content popup__content_lead">
         <img src="<%=require('./images/icons/close-white.svg').default %>" alt="Иконка закрытия окна" class="popup__close">
         <h3 class="popup__title">Закажите звонок</h3>
         <form class="popup__form" id="login-form">

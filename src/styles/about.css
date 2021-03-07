@@ -107,3 +107,139 @@ html {
     margin: 0 auto;
   }
 } 
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 7.5rem;
+}
+
+.team__item {
+  width: 360px;
+  height: 450px;
+  margin: 1rem;
+  position: relative;
+  cursor: url(../images/decorative/cursor-sight.png) 43 43, pointer ;
+}
+
+.team__img {
+  width: 360px;
+  height: 450px;
+  object-fit: cover;
+}
+
+@media (max-width: 1023px) {
+  .team__item, .team__img {
+    width: 270px;
+    height: 338px;
+  }
+} 
+
+@media (max-width: 380px) {
+  .team__item {
+    width: 90%;
+  }
+} 
+
+.team__name {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #FFFFFF;
+  visibility: hidden;
+  position: absolute;
+  top: 266px;
+  left: 0;
+}
+
+.team__about {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #FFFFFF;
+  visibility: hidden;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+}
+.team__img:hover {
+  filter: brightness(60%);
+}
+.team__item:hover p {
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .team__name, .team__about {
+    visibility: visible;
+  }
+  .team__img {
+    filter: brightness(60%);
+  }
+  .team__name {
+   top: 154px;
+  }
+  .team__about {
+    bottom: 20px;
+  }
+} 
+
+.person {
+  display: flex;
+}
+
+.person__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.person__main {
+  width: 360px;
+  margin-right: 3.75rem;
+}
+
+.person__img {
+  width: 360px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.person__name{
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+.person__description {
+  margin: 0;
+  font-size: 1rem;
+}
+.person__profession {
+  font-size: 1rem;
+  margin: .625rem 0 2.5rem;
+}
+
+.person__link {
+  margin: .5rem 0;
+  cursor: pointer;
+  color: #000000;
+  display: block;
+}
+
+.person__link:visited {
+  color: initial;
+}
+
+@media (max-width: 1024px) {
+  .person {
+    flex-direction: column-reverse;
+  }
+  .person__img {
+    display: none;
+  }
+  .person__main {
+    width: 100%;
+  }
+} 

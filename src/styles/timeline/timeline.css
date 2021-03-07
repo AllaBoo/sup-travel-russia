@@ -76,3 +76,8 @@
 ::-webkit-scrollbar-thumb {
   background : #192531;
 } 
+
+.timeline {
+  scrollbar-color: #192531 rgba(175, 175, 175, 0.4);
+  scrollbar-width: thin;
+}

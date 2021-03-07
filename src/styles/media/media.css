@@ -5,7 +5,7 @@
 }
 @media (max-width: 768px) {
   .tiles {
-    overflow: hidden;
+    overflow-x: scroll;
     width: 100%;
   }
 }

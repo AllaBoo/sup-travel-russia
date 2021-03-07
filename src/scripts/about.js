@@ -1,14 +1,9 @@
 import '../styles/about.css';
-import { Header } from './Header';
-const header = new Header();
-import { headerIcon, leadButton, leadPopup, closeButton } from './constants';
-headerIcon.addEventListener('click', () => header.openMenu());
+import { setHeaderListeners, teamPopup, denis } from './constants';
+import { Popup } from './Popup';
 
-leadButton.addEventListener('click', () => {
-  leadPopup.classList.add('popup_opened');
-  document.querySelector('.body').append(leadPopup);
-});
+const popupTeam = new Popup(teamPopup);
 
-closeButton.addEventListener('click', () => {
-  leadPopup.closest('.popup').classList.remove('popup_opened');
-});
+setHeaderListeners();
+
+denis.addEventListener('click', () => popupTeam.open());

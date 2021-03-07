@@ -6,7 +6,6 @@
   justify-content: space-between;
   z-index: 3;
   color: #000000;
-  width: 100%;
 }
 .header_white {
   background-color: #ffffff;
@@ -16,6 +15,7 @@
   right: 0;
 }
 .header_transparent {
+  position: static;
   background-color: transparent;
 }
 .logo__img {
@@ -44,6 +44,7 @@
   top: 5.25rem;
   left: 0;
   background-color: #ffffff;
+  z-index: 3;
 }
 
 .nav {
