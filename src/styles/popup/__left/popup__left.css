@@ -1,0 +1,5 @@
+.popup__left {
+  position: absolute;
+  left: 2rem;
+  bottom: 25%;
+}

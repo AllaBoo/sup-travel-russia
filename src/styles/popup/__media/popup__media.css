@@ -1,0 +1,6 @@
+.popup__media {
+  position: relative;
+  width: fit-content;
+  max-width: 90vw;
+  max-height: 90vh;
+}

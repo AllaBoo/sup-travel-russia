@@ -1,0 +1,14 @@
+.popup__caption {
+  color: #ffffff;
+  margin: 0;
+}
+
+.popup__caption_small {
+  font-size: .875rem;
+}
+
+.popup__caption_big {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}

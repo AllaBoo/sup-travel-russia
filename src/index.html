@@ -11,7 +11,7 @@
   </head>
 
   <body class="body">
-    <header class="header root">
+    <header class="header header_white root">
       <div class="container-horizontal">
         <button class="header__icon"><img src="<%=require('./images/icons/menu.svg').default %>" alt="Иконка открыть меню" id="first-icon">
           <template id="icon-open">
@@ -77,6 +77,27 @@
         </form>
       </div>
     </div>
+
+    <div id="photoPopup" class="popup">
+      <img src="<%=require('./images/icons/arrow-left-photo.svg').default %>" alt="Иконка закрытия окна" class="popup__left" id="prevPhoto">
+      <img src="<%=require('./images/icons/arrow-right-photo.svg').default %>" alt="Иконка закрытия окна" class="popup__right" id="nextPhoto">
+      <div class="popup__media">
+        <img src="<%=require('./images/icons/close-white.svg').default %>" alt="Иконка закрытия окна" class="popup__close">
+        <img src="" alt="Фото из галереи" class="popup__photo">
+        <div class="slider__caption">
+          <div>
+            <p class="popup__caption popup__caption_small">апрель 2019</p>
+            <p class="popup__caption popup__caption_big">Выездной SUP Тур</p>
+          </div>
+          <div class="container-horizontal">
+            <p class="popup__caption popup__caption_big" id="cur-photo"></p>
+            <p class="popup__caption popup__caption_big">&nbsp;&mdash;&nbsp;</p>
+            <p class="popup__caption popup__caption_big" id="last-photo"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="locomotiveScroll">
     <section class="welcome root">
       <div class="slider">
@@ -122,7 +143,7 @@
           <div class="slider__container">
             <p class="slider__number" id="current-img">01</p>
             <progress class="slider__progress" value="1"></progress>
-            <p class="slider__number" id="last-img">08</p>
+            <p class="slider__number" id="last-img"></p>
           </div>
         </div>
       </div>
@@ -187,27 +208,27 @@
       <div class="title root">
         <h2 class="title__shadow">Медиа галерея</h2>
         <p class="title__text root">Медиа галерея</p>
+      <div>
         <div class="tiles tiles--oneline" id="grid2">
           <div class="tiles__wrap">
             <div class="tiles__line" data-scroll data-scroll-speed="2" data-scroll-target="#grid2" data-scroll-direction="horizontal">
-              <div class="tiles__line-img"></div>
-              <div class="tiles__line-img"></div>
-              <div class="tiles__line-img"></div>
-              <div class="tiles__line-img"></div>
+              <img src="<%=require('./images/sup4.jpg').default %>" class="tiles__line-img">
+              <img src="<%=require('./images/sup2.jpg').default %>" class="tiles__line-img">
+              <img src="<%=require('./images/media/media-03.jpg').default %>" class="tiles__line-img">
+              <img src="<%=require('./images/media/media-04.jpg').default %>" class="tiles__line-img">
             </div>
           </div>
         </div>
         <div class="tiles tiles--oneline" id="grid3">
           <div class="tiles__wrap">
             <div class="tiles__line" data-scroll data-scroll-speed="-2" data-scroll-target="#grid3" data-scroll-direction="horizontal">
-              <div class="tiles__line-img row2"></div>
-              <div class="tiles__line-img row2"></div>
-              <div class="tiles__line-img row2"></div>
-              <div class="tiles__line-img row2"></div>
+              <img src="<%=require('./images/media/media-05.jpg').default %>" class="tiles__line-img">
+              <img src="<%=require('./images/media/media-06.jpg').default %>" class="tiles__line-img">
+              <img src="<%=require('./images/media/media-07.jpg').default %>" class="tiles__line-img">
+              <img src="<%=require('./images/media/media-08.jpg').default %>" class="tiles__line-img">
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <section class="section root">
