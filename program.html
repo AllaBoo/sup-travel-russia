@@ -7,7 +7,7 @@
     <meta name="Author" content="Алла Бутеева" />
     <title>SUP Travel Russia</title>
     <link rel="icon" href="./images/favicon.png">
-    <link rel="stylesheet" href="styles/program.ac90fd3459e3c6a4bc7d.css">
+    <link rel="stylesheet" href="styles/program.29b10d85861bda069bbf.css">
   </head>
 
   <body class="body"> 
@@ -171,6 +171,23 @@
       </div>
     </main>
 
+    <section class="section">
+      <div class="title root">
+        <h2 class="title__shadow">Медиа галерея</h2>
+        <p class="title__text root">Медиа галерея</p>
+      </div>
+        <div class="tiles tiles--oneline" id="grid2">
+          <div class="tiles__wrap">
+            <div class="tiles__line" data-scroll data-scroll-speed="2" data-scroll-target="#grid2" data-scroll-direction="horizontal">
+              <img src="./images/media-01.jpg" class="tiles__line-img">
+              <img src="./images/media-02.jpg" class="tiles__line-img">
+              <img src="./images/media-03.jpg" class="tiles__line-img">
+              <img src="./images/media-04.jpg" class="tiles__line-img">
+            </div>
+          </div>
+        </div>
+    </section>
+
     <footer class="footer root">
       <div class="footer__row footer__row_top">
         <div class="container-horizontal">
@@ -272,7 +289,29 @@
         </form>
       </div>
     </div>
+
+    
+    <div id="photoPopup" class="popup">
+      <img src="./images/arrow-left-photo.svg" alt="Иконка закрытия окна" class="popup__left" id="prevPhoto">
+      <img src="./images/arrow-right-photo.svg" alt="Иконка закрытия окна" class="popup__right" id="nextPhoto">
+      <div class="popup__media">
+        <img src="./images/close-white.svg" alt="Иконка закрытия окна" class="popup__close">
+        <img src="" alt="Фото из галереи" class="popup__photo">
+        <div class="slider__caption">
+          <div>
+            <p class="popup__caption popup__caption_small">апрель 2019</p>
+            <p class="popup__caption popup__caption_big">Выездной SUP Тур</p>
+          </div>
+          <div class="container-horizontal">
+            <p class="popup__caption popup__caption_big" id="cur-photo"></p>
+            <p class="popup__caption popup__caption_big">&nbsp;&mdash;&nbsp;</p>
+            <p class="popup__caption popup__caption_big" id="last-photo"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
-    <script src=" ./scripts/program.f006bdd7ea91c23bde55.js"></script>
+    <script src=" ./scripts/program.e7493323a99919219805.js"></script>
   </body>
 </html>
