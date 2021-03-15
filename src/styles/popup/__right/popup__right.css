@@ -3,3 +3,10 @@
   right: 2rem;
   top: 25%;
 }
+
+@media (max-width: 768px) {
+  .popup__right {
+    top: 85%;
+    right: 2rem;
+  }
+}

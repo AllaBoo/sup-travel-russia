@@ -45,3 +45,17 @@
     margin: 0;
   }
 }
+
+.design {
+  background: url(../../images/SUP-TRAVEL.png);
+  background-repeat: no-repeat;
+  width: 460px;
+  height: 59px;
+}
+
+.spotlight {
+  background: url(../../images/SUP-TRAVEL-black.png);
+  position: absolute;
+  width: 460px;
+  height: 59px;
+}

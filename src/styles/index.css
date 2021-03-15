@@ -1,7 +1,6 @@
 @import url(./popup/popup.css);
 @import url(./header.css);
 @import url(./button.css);
-@import url(./root/root.css);
 @import url(./section/section.css);
 @import url(./body/body.css);
 @import url(./span/span.css);
@@ -11,13 +10,14 @@
 @import url(./main-menu/main-menu.css);
 @import url(./partners/partners.css);
 @import url(./title/title.css);
-@import url(./infographics/infographics.css);
 @import url(./footer/footer.css);
 @import url(./container-horizontal/container-horizontal.css);
 @import url(./mixins/mixins.css);
 @import url(./media/media.css);
 @import url(./locomotive-scroll/locomotive-scroll.css);
 @import url(./heading/heading.css);
+@import url(./infographics/infographics.css);
+@import url(./root/root.css);
 
 @font-face {
   font-family: Geometria;

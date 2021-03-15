@@ -3,3 +3,9 @@
   left: 2rem;
   bottom: 25%;
 }
+@media (max-width: 768px) {
+  .popup__left {
+    left: 2rem;
+    top: 85%;
+  }
+}

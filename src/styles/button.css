@@ -14,11 +14,7 @@
   background-color: #000000;
   color: #ffffff;
 }
-.button_desabled {
-  background-color: #ffffff;
-  color: gray;
-}
-.button_desabled:hover { 
+.button:disabled {
   background-color: #ffffff;
   color: gray;
 }

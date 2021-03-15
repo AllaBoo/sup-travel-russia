@@ -15,6 +15,8 @@ module.exports = {
     contacts: './src/scripts/contacts.js',
     about: './src/scripts/about.js',
     faq: './src/scripts/faq.js',
+    person: './src/scripts/person.js',
+    media: './src/scripts/media.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -131,6 +133,18 @@ module.exports = {
       template: './src/faq.html',
       filename: './faq.html',
       chunks: ['faq'],
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/person.html',
+      filename: './person.html',
+      chunks: ['person'],
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/media.html',
+      filename: './media.html',
+      chunks: ['media'],
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

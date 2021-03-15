@@ -14,10 +14,8 @@
 @import url(./cower/cower.css);
 @import url(./complexity/complexity.css);
 @import url(./title/title.css);
-@import url(./program/program.css);
 @import url(./timeline/timeline.css);
-@import url(./media/media.css);
-
+@import url(./program/program.css);
 
 @font-face {
   font-family: Geometria;

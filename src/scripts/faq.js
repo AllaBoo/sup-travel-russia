@@ -1,10 +1,9 @@
 import '../styles/faq.css';
-import { Header } from './Header';
-const header = new Header();
-import { headerIcon, leadButton, leadPopup, closeButton } from './constants';
-// DOM Elements
+import { setHeaderListeners } from './constants';
+
 const tabs = document.querySelectorAll('.tab');
 const tabContents = document.querySelectorAll('.tabcontent');
+const details = document.querySelectorAll("details");
 
 const activateTab = tabnum => {
   document.querySelector('#all').classList.remove('tab_active')
@@ -39,15 +38,17 @@ const activateAll = () => {
 
 document.querySelector('#all').addEventListener('click', () => activateAll());
 
+// Add the onclick listeners.
+details.forEach((targetDetail) => {
+  targetDetail.addEventListener("click", () => {
+    // Close all the details that are not targetDetail.
+    details.forEach((detail) => {
+      if (detail !== targetDetail) {
+        detail.removeAttribute("open");
+      }
+    });
+  });
+});
+
+setHeaderListeners();
 activateAll();
-
-headerIcon.addEventListener('click', () => header.openMenu());
-
-leadButton.addEventListener('click', () => {
-  leadPopup.classList.add('popup_opened');
-  document.querySelector('.body').append(leadPopup);
-});
-
-closeButton.addEventListener('click', () => {
-  leadPopup.closest('.popup').classList.remove('popup_opened');
-});

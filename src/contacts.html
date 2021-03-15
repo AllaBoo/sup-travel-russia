@@ -22,7 +22,7 @@
           </template>
         </button>
         <div class="container-horizontal">
-          <img class="logo__img" src="<%=require('./images/logos/logo.png').default %>" alt="Логотип Sup Travel Russia">
+          <a href="index.html"><img class="logo__img" src="<%=require('./images/logos/logo.png').default %>" alt="Логотип Sup Travel Russia"></a>
           <p class="logo__text">SUP Travel<span class="span">Russia</span></p>
         </div>
       </div>
@@ -36,13 +36,13 @@
               <a class="header__link" href="">Бронирование</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="">О&nbsp;нас</a>
+              <a class="header__link" href="about.html">О&nbsp;нас</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="">F.A.Q.</a>
+              <a class="header__link" href="faq.html">F.A.Q.</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="">Контакты</a>
+              <a class="header__link" href="contacts.html">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -58,14 +58,7 @@
         </div>
         <h1 class="heading black center contacts__heading">КОНТАКТЫ</h1>
         <div class="contacts">
-            <div class="contacts__item">
-              <p class="contacts__type">Телефон:</p>
-              <a href="tel+74951855979" class="contacts__link">8 (495) 185-59-79</a>
-            </div>
-            <div class="contacts__item">
-              <p class="contacts__type">Адрес:</p>
-              <p class="contacts__value">Россия, Московская&nbsp;область,<br> городской округ Солнечногорск,<br> Трусово</p>
-            </div>
+          <div class="contacts__column">
             <div class="contacts__item">
               <p class="contacts__type">Социальные сети:</p>
               <div class="contacts__social">
@@ -97,28 +90,46 @@
                     </svg>                
                 </a>
               </div>
-            </div>
-            <div class="contacts__item">
-              <p class="contacts__type">Часы работы:</p>
-              <p class="contacts__value">09:00-21:00</p>
+              <br>
             </div>
             <div class="contacts__item">
               <p class="contacts__type">Почта:</p>
               <a href="mailto:suptravelrussia@gmail.com" class="contacts__link">suptravelrussia@gmail.com</a>
             </div>
+            <div class="contacts__item">
+              <p class="contacts__type">Адрес:</p>
+              <p class="contacts__value">Россия,<br>Московская&nbsp;область, <br>городской&nbsp;округ&nbsp;Солнечногорск,<br> Трусово</p>
+            </div>
+          </div>
+          <div class="contacts__column">
+            <div class="contacts__item">
+              <p class="contacts__type">SUP&nbsp;Travel&nbsp;Russia</p>
+              <p class="contacts__value">ИП&nbsp;Залошков&nbsp;Д.В.</p>
+              <a class="contacts__link">Реквизиты</a>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__type">Часы работы:</p>
+              <p class="contacts__value">09:00-21:00</p>
+            </div>
+            <div class="contacts__item contacts__item_mobile">
+              <p class="contacts__type">Телефон:</p>
+              <a href="tel+74951855979" class="contacts__link">8 (495) 185-59-79</a>
+            </div>
+          </div>
+          <div class="contacts__column">
+            <div class="contacts__item contacts__item_desctop">
+              <p class="contacts__type">Телефон:</p>
+              <a href="tel+74951855979" class="contacts__link">8 (495) 185-59-79</a>
+            </div>
+          </div>
+          <div class="scroll section__scroll">
+            <img src="<%=require('./images/decorative/scroll.svg').default %>" class="rotate" alt="листайте вниз">
+            <img src="<%=require('./images/decorative/arrow-down-huge.svg').default %>" alt="стрелка вниз">
+          </div>
+        </div>
 
-        </div>
-        <div class="contacts__item contacts__item_bank">
-          <p class="contacts__type">SUP Travel Russia</p>
-          <p class="contacts__value">ИП Залошков Денис Владимирович</p>
-          <a class="contacts__link">Реквизиты</a>
-        </div>
-        <div class="scroll section__scroll">
-          <img src="<%=require('./images/decorative/scroll.svg').default %>" class="rotate" alt="листайте вниз">
-          <img src="<%=require('./images/decorative/arrow-down-huge.svg').default %>" alt="стрелка вниз">
-        </div>
     </section>
-
+<!-- 
     <section class="section root way">
       <div class="way__container">
         <p class="way__title bold">Как до нас добраться <span class="span">на личном автомобиле?</span></p>
@@ -128,7 +139,7 @@
         <p class="way__title bold">Как до нас добраться <span class="span"></span>на общественном транспорте?</span></p>
         <div class="way__video"></div>
       </div>
-    </section>
+    </section> -->
 
     <section class="contacts__form section">
       <h3 class="popup__title">Свяжитесь с нами</h3>
@@ -159,7 +170,7 @@
     <footer class="footer root">
       <div class="footer__row footer__row_top">
         <div class="container-horizontal">
-          <img class="logo__img" src="<%=require('./images/logos/logo.png').default %>" alt="Логотип Sup Travel Russia">
+          <a href="index.html"><img class="logo__img" src="<%=require('./images/logos/logo.png').default %>" alt="Логотип Sup Travel Russia"></a>
           <h1 class="logo__text">SUP Travel<span class="span">Russia</span></h1>
         </div>
 

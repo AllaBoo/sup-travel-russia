@@ -151,4 +151,19 @@
 .slider__progress {
   margin: 0 .5rem;
   display: flex;
+  background-color: #D4D9E1;
+  position: relative;
+	height: 4px;
+	width: 100px;
+}
+
+.slider__progress-done {
+  background-color: #000000;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+  opacity: 1;
+	transition: 1s ease 0.3s;
 }

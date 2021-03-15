@@ -15,3 +15,11 @@
 .popup__input:focus {
   opacity: 1;
 }
+/* 
+input:valid {
+  border-bottom: 1px solid green;
+}
+
+input:invalid {
+  border-bottom: 1px solid red;
+} */

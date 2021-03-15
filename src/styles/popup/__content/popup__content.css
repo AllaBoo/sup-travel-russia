@@ -14,13 +14,6 @@
   background-position: bottom right, top left;
 }
 
-.popup__content_team {
-  padding: 4.25rem;
-  width: 1098px;
-  background-image: url(../../../images/decorative/mandala-top-right.svg);
-  background-position: top right;
-}
-
 @media (max-width: 1024px) {
   .popup__content {
    width: 70%;
