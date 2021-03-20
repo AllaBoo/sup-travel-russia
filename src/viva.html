@@ -7,70 +7,72 @@
     <meta name="Author" content="Алла Бутеева" />
     <title>SUP Travel Russia</title>
     <link rel="icon" href="<%=require('./images/logos/favicon.png').default %>">
-    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.media.css %>">
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.viva.css %>">
   </head>
 
-  <body class="body">
-    <header class="header header_white root">
-      <div class="container-horizontal">
-        <button class="header__icon"><img src="<%=require('./images/icons/menu.svg').default %>" alt="Иконка открыть меню" id="first-icon">
-          <template id="icon-open">
-            <img src="<%=require('./images/icons/menu.svg').default %>" alt="Иконка открыть меню" class="header__icon" id="open">
-          </template>
-          <template id="icon-close">
-            <img src="<%=require('./images/icons/close-small-black.svg').default %>" alt="Иконка закрыть" class="header__icon" id="close">
-          </template>
-        </button>
-        <a href="index.html" class="container-horizontal">
-          <img class="logo__img" src="<%=require('./images/logos/logo.png').default %>" alt="Логотип Sup Travel Russia">
-          <p class="logo__text">SUP&nbsp;Travel<span class="span">Russia</span></p>
-        </a>
-      </div>
-      <div class="container-horizontal">
-        <nav class="nav header__menu">
-          <ul class="nav__list header__nav">
-            <li class="header__item">
-              <a class="header__link" href="">Услуги&nbsp;и&nbsp;цены</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="booking.html">Бронирование</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="about.html">О&nbsp;нас</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="faq.html">F.A.Q.</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="contacts.html">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="button header__button" id="leadButton">Жду&nbsp;звонка</button>
-      </div>
-    </header>
-    <div class="header__back"></div>
-    <main class="section root">
-      <div class="bread-crumbs bread-crumbs_gray">
-        <a href="index.html" class="bread-crumbs__link">Главная</a>
-        <p class="bread-crumbs__text">–</p>
-        <a href="" class="bread-crumbs__link bread-crumbs__link_active">Выездные SUP туры</a>
-      </div>
-      <h1 class="heading black center section__heading">Медиа</h1>
-      <div class="album">
-        <div class="album__item">
+  <body class="body"> 
+    <div class="cower root">
+      <header class="header header_transparent">
+        <div class="container-horizontal">
+          <button class="header__icon"><img src="<%=require('./images/icons/menu.svg').default %>" alt="Иконка открыть меню" id="first-icon">
+            <template id="icon-open">
+              <img src="<%=require('./images/icons/menu.svg').default %>" alt="Иконка открыть меню" class="header__icon" id="open">
+            </template>
+            <template id="icon-close">
+              <img src="<%=require('./images/icons/close-small-black.svg').default %>" alt="Иконка закрыть" class="header__icon" id="close">
+            </template>
+          </button>
           <div class="container-horizontal">
-            <img class="album__icon" src="<%=require('./images/icons/photo.svg').default %>">
-            <p class="album__text">10</p>
-            <img class="album__icon" src="<%=require('./images/icons/video.svg').default %>">
-            <p class="album__text">5</p>
+            <a href="index.html"><img class="logo__img" src="<%=require('./images/logos/logo.png').default %>" alt="Логотип Sup Travel Russia"></a>
+            <p class="logo__text">SUP&nbsp;Travel<span class="span">Russia</span></p>
           </div>
-          <p class="album__text">Летний SUP бординг</p>
         </div>
-      </div>
-    </main>
+        <div class="container-horizontal">
+          <nav class="nav header__menu">
+            <ul class="nav__list header__nav">
+              <li class="header__item">
+                <a class="header__link" href="">Услуги&nbsp;и&nbsp;цены</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="booking.html">Бронирование</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="about.html">О&nbsp;нас</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="faq.html">F.A.Q.</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="button header__button" id="leadButton">Жду&nbsp;звонка</button>
+        </div>
+      </header>
 
-    <footer class="footer root">
+      <main class="person">
+        <div class="person__main">
+          <img src="<%=require('./images/about/Vionard_big.jpg').default %>" alt="Вионард" class="person__img">
+          <p><span class="bold">Области интересов:</span> SUP, лонгборд, соревновательные игры, экстремальные виды спорта, технологии, общение</p>
+          <p class="bold">Сертификаты:</p>
+          <a href="" class="person__link">Сертификат об оказании первой помощи</a>
+          <a href="" class="person__link">Сертификат спасателя на воде</a>
+          <a href="" class="person__link">Сертификат ISA SUP Flat Water</a>  
+        </div>
+        <div class="person__column">
+          <p class="person__name">Вионард</p>
+          <p class="person__name">Малхазов</p>
+          <p class="person__profession"><span class="bold">Должность:</span> Старший SUP Инструктор</p>
+          <p class="person__description">Вионард - самый веселый и общительный член нашей команды, который не только знает как уделить внимание гостям, но и обладает большим опытом работы инструктором.</p>
+          <p class="person__description">SUP, лонгборд, сноуборд, балансборд -  те направления, которыми Вионард занимается много лет. Огромный багаж знаний и навыков позволяет ему не только делиться умениями с гостям нашей станции, но и обучать и растить новых квалифицированных инструкторов SUP Travel Russia. Именно этот молодой человек следит за тем, чтобы весь персонал SUP Travel Russia соответствовал стандартам и требованиям. </p>
+          <p class="person__description">Вионард - SUP инструктор высшей категории, благодаря которому любой маршрут на SUP пройдет радостно и беззаботно, а гости гарантированно будут гордиться своими новыми достижениями. </p>
+          <p class="person__description">Если Вионард не на маршруте, на станции он всегда сыграет с гостями в партию фрисби или научит новым трюкам на балансборде.</p>
+
+        </div>
+      </main>
+
+      <footer class="footer root">
       <div class="footer__row footer__row_top">
         <div class="container-horizontal">
           <a href="index.html"><img class="logo__img" src="<%=require('./images/logos/logo.png').default %>" alt="Логотип Sup Travel Russia"></a>
@@ -171,6 +173,28 @@
         </form>
       </div>
     </div>
+
+    
+    <div id="photoPopup" class="popup">
+      <img src="<%=require('./images/icons/arrow-left-photo.svg').default %>" alt="Иконка закрытия окна" class="popup__left" id="prevPhoto">
+      <img src="<%=require('./images/icons/arrow-right-photo.svg').default %>" alt="Иконка закрытия окна" class="popup__right" id="nextPhoto">
+      <div class="popup__media">
+        <img src="<%=require('./images/icons/close-white.svg').default %>" alt="Иконка закрытия окна" class="popup__close">
+        <img src="" alt="Фото из галереи" class="popup__photo">
+        <div class="slider__caption">
+          <div>
+            <p class="popup__caption popup__caption_small">апрель 2019</p>
+            <p class="popup__caption popup__caption_big">Выездной SUP Тур</p>
+          </div>
+          <div class="container-horizontal">
+            <p class="popup__caption popup__caption_big" id="cur-photo"></p>
+            <p class="popup__caption popup__caption_big">&nbsp;&mdash;&nbsp;</p>
+            <p class="popup__caption popup__caption_big" id="last-photo"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
     <script src=" <%= htmlWebpackPlugin.files.js %>"></script>
   </body>

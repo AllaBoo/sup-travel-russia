@@ -163,6 +163,9 @@ if (window.screen.availWidth > 768) {
 					break;
 			}
 		});
+		
+		item.addEventListener('touchstart', handleTouchStart, false);        
+		item.addEventListener('touchmove', handleTouchMove, false);
 
 		// swipe navigation
 		// from http://stackoverflow.com/a/23230280
@@ -207,16 +210,16 @@ if (window.screen.availWidth > 768) {
 
 })();
 
-window.addEventListener("DOMContentLoaded", () => {
+// window.addEventListener("DOMContentLoaded", () => {
 
-	const spotlight = document.querySelector('.spotlight');
+// 	const spotlight = document.querySelector('.spotlight');
 
-	let spotlightSize = 'transparent 30px, rgba(0, 0, 0, 0.85) 30px)';
+// 	let spotlightSize = 'transparent 30px, rgba(0, 0, 0, 0.85) 30px)';
 
-	window.addEventListener('mousemove', e => updateSpotlight(e));
+// 	window.addEventListener('mousemove', e => updateSpotlight(e));
 
-	function updateSpotlight(e) {
-			spotlight.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 100}% ${e.pageY / window.innerHeight * 100}%, ${spotlightSize}`;
+// 	function updateSpotlight(e) {
+// 			spotlight.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 100}% ${e.pageY / window.innerHeight * 100}%, ${spotlightSize}`;
 
-	}
-});
+// 	}
+// });

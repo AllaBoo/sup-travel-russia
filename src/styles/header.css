@@ -23,11 +23,7 @@
   height: 53px;
   margin-right: .5rem;
 }
-@media (max-width: 1023px) {
-  .logo__img {
-    margin-left: 1rem;
-  }
-}
+
 @media (max-width: 768px) {
   .logo__img {
     height: 40px;
@@ -125,6 +121,8 @@
   font-size: .875rem;
   text-decoration: none;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
 }
 
 .header__link:visited {
@@ -133,7 +131,7 @@
 @media (max-width: 768px) {
   .header__item {
     margin: .5rem 0;
-    border-bottom: 1px solid #000000;
+    /* border-bottom: 1px solid #000000; */
   }
 }
 .header__link_active {
@@ -149,7 +147,6 @@
 @media (max-width: 1024px) {
   .header__button {
     font-size: .75rem;
-    padding: 0.375rem 1.5rem;
   }
 }
 

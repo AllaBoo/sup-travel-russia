@@ -34,11 +34,6 @@
   margin-bottom: 1.5rem;
 }
 
-.timeline__further {
-  font-size: 2rem;
-  margin: -10px 0 0;
-}
-
 .swiper-button-next {
   top: 68% !important;
   right: 6rem !important;
@@ -78,4 +73,10 @@
   .swiper-button-prev {
     left: 0 !important;
   }
+}
+
+.timeline__further {
+  width: 20px;
+  height: 20px;
+  margin: 0;
 }

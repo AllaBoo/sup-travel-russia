@@ -14,6 +14,7 @@
 @import url(./heading/heading.css);
 @import url(./section/section.css);
 @import url(./tabs.css);
+@import url(./faq/faq.css);
 
 @font-face {
   font-family: Geometria;
@@ -61,64 +62,3 @@ html {
     font-size: 10px;
   }
 } 
-
-.faq__details {
-  color: #000000;
-  max-width: 939px;
-}
-.faq__summary {
-  color: #000000;
-  font-size: 2rem;
-  position: relative;
-  box-sizing: border-box;
-  padding: 1rem 4rem 1rem 0;
-}
-
-.faq__text {
-  font-size: 1.125rem;
-  margin: .5rem 0;
-}
-.faq__ul {
-  list-style-position: inside;
-  padding: 0;
-}
-
-.faq__li {
-  margin: .5rem 0;
-}
-.faq__li::marker {
-  content: '\2014 \0020';
-}
-
-/* Убираем стандартный маркер Chrome */
-details summary::-webkit-details-marker {
-  display: none
-}
-/* Убираем стандартный маркер Firefox */
-details > summary {
-  list-style: none;
-}
-
-/* Добавляем собственный маркер для закрытого состояния */
-details summary::after {
-  content: '+';
-  font-size: 3rem;
-  font-weight: normal;
-  position: absolute;
-  top: .5rem;
-  right: 0;
-}
-
-/* Добавляем собственный маркер для открытого состояния */
-details[open] summary::after {
-  content: '\2013';
-  font-size: 2.5rem;
-  font-weight: normal;
-  position: absolute;
-  top: .5rem;
-  right: 0;
-}
-
-details[open] summary {
-  color: #F79E1B;
-}

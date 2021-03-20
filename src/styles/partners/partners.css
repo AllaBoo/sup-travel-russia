@@ -8,6 +8,12 @@
   object-fit: contain;
   margin: 1rem;
 }
+@media (max-width: 1024px) {
+  .partners__logo {
+    max-width: 140px;
+  }
+}
+
 @media (max-width: 768px) {
   .partners {
     flex-wrap: wrap;

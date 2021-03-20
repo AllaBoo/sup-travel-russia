@@ -5,7 +5,8 @@
 }
 @media (max-width: 768px) {
   .popup__left {
-    left: 2rem;
-    top: 85%;
+    width: 60px;
+    left: 15%;
+    bottom: 70px;
   }
 }

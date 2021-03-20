@@ -32,23 +32,28 @@
 .nav__item {
   margin: 0 1.5rem 2rem 0;
 }
-@media (max-width: 1439px) {
+@media (max-width: 1400px) {
   .tabs__list {
     flex-wrap: wrap;
     justify-content: flex-start;
   }
   .nav__item {
-    min-width: 11.25rem;
+    width: 22%;
+  }
+}
+@media (max-width: 800px) {
+  .nav__item {
+    width: 28%;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 560px) {
   .nav__item {
-    min-width: 12rem;
-  }
-}
-@media (max-width: 600px) {
-  .nav__item:nth-of-type(even) {
+    font-size: 1.25rem;
+    width: 50%;
     margin-right: 0;
+  }
+  .nav__item:nth-of-type(even) {
+    text-align: right;
   }
 }

@@ -2,6 +2,7 @@
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  margin: 0;
 }
 .bread-crumbs__link:visited {
   color: inherit;

@@ -1,4 +1,8 @@
 .container-horizontal {
   display: flex;
   align-items: center;
+  text-decoration: none;
+}
+.container-horizontal:visited {
+  color: #000000;
 }

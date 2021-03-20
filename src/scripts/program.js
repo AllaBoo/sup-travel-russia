@@ -44,7 +44,52 @@ function photoZoomer (pic) {
 		}
 		document.querySelector('#cur-photo').textContent = current > 8 ? current+1 : `0${current+1}`;
 	}
-	
+		//keyboard navigation
+		document.addEventListener('keydown', function(ev) {
+			var keyCode = ev.keyCode || ev.which;
+			switch (keyCode) {
+				case 37:
+					navigate('left');
+					break;
+				case 39:
+					navigate('right');
+					break;
+			}
+		});	
+	// swipe navigation
+		// from http://stackoverflow.com/a/23230280
+		document.querySelector('.popup__photo').addEventListener('touchstart', handleTouchStart, false);        
+		document.querySelector('.popup__photo').addEventListener('touchmove', handleTouchMove, false);
+		var xDown = null;
+		var yDown = null;
+		function handleTouchStart(evt) {
+			xDown = evt.touches[0].clientX;
+			yDown = evt.touches[0].clientY;
+		};
+		function handleTouchMove(evt) {
+			if ( ! xDown || ! yDown ) {
+				return;
+			}
+
+			var xUp = evt.touches[0].clientX;
+			var yUp = evt.touches[0].clientY;
+
+			var xDiff = xDown - xUp;
+			var yDiff = yDown - yUp;
+
+			if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+				if ( xDiff > 0 ) {
+					/* left swipe */
+					navigate('right');
+				} else {
+					navigate('left');
+				}
+			} 
+			/* reset values */
+			xDown = null;
+			yDown = null;
+		};
+
 }
 
 

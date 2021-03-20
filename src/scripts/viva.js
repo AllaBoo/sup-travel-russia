@@ -1,4 +1,4 @@
-import '../styles/person.css';
+import '../styles/viva.css';
 import { setHeaderListeners } from './constants';
 
 setHeaderListeners();

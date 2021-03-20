@@ -12,20 +12,13 @@
   margin-left: 4.75rem;
 }
 
-.welcome__text {
-  text-align: justify;
-  width: 40%;
-}
 .welcome__title {
   line-height: 5rem;
 }
-
-@media (max-width: 900px) {
-  .welcome__text {
-    width: 100%;
-  }
+.welcome__text {
+  box-sizing: border-box;
+  padding-left: 5px;
 }
-
 @media (max-width: 768px) {
   .welcome__title {
     text-align: center;
