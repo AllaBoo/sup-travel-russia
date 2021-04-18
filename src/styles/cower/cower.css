@@ -1,5 +1,4 @@
 .cower {
-  background-image: url(../../images/tours/winter-New-Erusalem/Sup-New-Erusalem-winter14.jpeg);
   background-position: bottom center;
   background-size: cover;
   position: relative;
@@ -7,8 +6,9 @@
   padding-top: 10px;
   padding-bottom: 100px;
   color: #ffffff;
-  min-height: 100vh;
+  height: 100vh;
 }
+
 .cower::after {
   content: '';
   position: absolute;

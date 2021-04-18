@@ -34,13 +34,6 @@
 	}
 }
 
-a, button {
-  cursor: url(../images/decorative/cursor.png) 43 43, pointer;
-}
-a:hover button:hover {
-  cursor: url(../images/decorative/cursor.png) 43 43, pointer;
-}
-
 html {
   font-size: 16px;
   font-family: Geometria;
@@ -172,11 +165,12 @@ p {
   font-weight: bold;
   color: #000000;
 }
-.booking__link:hover {
-  cursor: pointer;
-  color: #F79E1B;
+@media screen {
+  .booking__link:hover {
+    cursor: pointer;
+    color: #F79E1B;
+  }
 }
-
 .booking__layout-mobile {
   display: none;
 }
@@ -214,12 +208,13 @@ p {
 .booking__social:visited {
   color: #000000;
 }
-.booking__social:hover {
-  color: #F79E1B;
-  text-decoration: underline;
-  cursor: pointer;
+@media screen {
+  .booking__social:hover {
+    color: #F79E1B;
+    text-decoration: underline;
+    cursor: pointer;
 }
-
+}
 .booking__socials {
   display: flex;
   justify-content: space-between;
@@ -375,9 +370,6 @@ p {
   } 
   .booking__item:nth-of-type(even) {
     width: 100%;
-  }
-  summary {
-    font-size: 1rem !important;
   }
   .booking__container > p {
     font-size: 8px;

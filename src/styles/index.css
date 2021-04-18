@@ -37,14 +37,14 @@
 		transform: rotate(360deg);
 	}
 }
-
-a, button {
-  cursor: url(../images/decorative/cursor.png) 43 43, pointer;
+@media screen {
+  a, button {
+    cursor: url(../images/decorative/cursor.png) 43 43, pointer;
+  }
+  a:hover button:hover {
+    cursor: url(../images/decorative/cursor.png) 43 43, pointer;
+  }
 }
-a:hover button:hover {
-  cursor: url(../images/decorative/cursor.png) 43 43, pointer;
-}
-
 html {
   font-size: 16px;
   font-family: Geometria;
@@ -57,11 +57,237 @@ html {
 }
 @media (max-width: 425px) {
   html {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 @media (max-width: 320px) {
   html {
     font-size: 10px;
+  }
+} 
+
+.s {
+  width: 48px;
+  height: 59px;
+  background-image: url(../images/s-black.png);
+  background-size: cover;
+}
+.s:hover {
+  background-image: url(../images/s.png);
+}
+.u {
+  width: 54px;
+  height: 59px;
+  background-image: url(../images/u-black.png);
+  background-size: cover;
+}
+.u:hover {
+  background-image: url(../images/u.png);
+}
+.p {
+  width: 57px;
+  height: 59px;
+  background-image: url(../images/p-black.png);
+  background-size: cover;
+}
+.p:hover {
+  background-image: url(../images/p.png);
+}
+.t {
+  width: 53px;
+  height: 59px;
+  background-image: url(../images/t-black.png);
+  background-size: cover;
+}
+.t:hover {
+  background-image: url(../images/t.png);
+}
+.r {
+  width: 51px;
+  height: 59px;
+  background-image: url(../images/r-black.png);
+  background-size: cover;
+}
+.r:hover {
+  background-image: url(../images/r.png);
+}
+.a {
+  width: 58px;
+  height: 59px;
+  background-image: url(../images/a-black.png);
+  background-size: cover;
+}
+.a:hover {
+  background-image: url(../images/a.png);
+}
+.v {
+  width: 51px;
+  height: 59px;
+  background-image: url(../images/v-black.png);
+  background-size: cover;
+}
+.v:hover {
+  background-image: url(../images/v.png);
+}
+.e {
+  width: 47px;
+  height: 59px;
+  background-image: url(../images/e-black.png);
+  background-size: cover;
+}
+.e:hover {
+  background-image: url(../images/e.png);
+}
+.l {
+  width: 41px;
+  height: 59px;
+  background-image: url(../images/l-black.png);
+  background-size: cover;
+}
+.l:hover {
+  background-image: url(../images/l.png);
+}
+
+@media (max-width: 1185px) {
+  .s {
+    width: 36px;
+    height: 44px;
+    background-image: url(../images/s-black.png);
+  }
+  .u {
+    width: 40px;
+    height: 44px;
+    background-image: url(../images/u-black.png);
+  }
+  .p {
+    width: 41px;
+    height: 44px;
+    background-image: url(../images/p-black.png);
+  }
+  .t {
+    width: 40px;
+    height: 44px;
+    background-image: url(../images/t-black.png);
+  }
+  .r {
+    width: 39px;
+    height: 44px;
+    background-image: url(../images/r-black.png);
+  }
+  .a {
+    width: 44px;
+    height: 44px;
+    background-image: url(../images/a-black.png);
+  }
+  .v {
+    width: 38px;
+    height: 44px;
+    background-image: url(../images/v-black.png);
+  }
+  .e {
+    width: 35px;
+    height: 44px;
+    background-image: url(../images/e-black.png);
+  }
+  .l {
+    width: 31px;
+    height: 44px;
+    background-image: url(../images/l-black.png);
+  }
+} 
+
+@media (max-width: 450px) {
+  .s {
+    width: 31px;
+    height: 40px;
+    background-image: url(../images/s-black.png);
+  }
+  .u {
+    width: 36px;
+    height: 40px;
+    background-image: url(../images/u-black.png);
+  }
+  .p {
+    width: 38px;
+    height: 40px;
+    background-image: url(../images/p-black.png);
+  }
+  .t {
+    width: 36px;
+    height: 40px;
+    background-image: url(../images/t-black.png);
+  }
+  .r {
+    width: 35px;
+    height: 40px;
+    background-image: url(../images/r-black.png);
+  }
+  .a {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/a-black.png);
+  }
+  .v {
+    width: 34px;
+    height: 40px;
+    background-image: url(../images/v-black.png);
+  }
+  .e {
+    width: 31px;
+    height: 40px;
+    background-image: url(../images/e-black.png);
+  }
+  .l {
+    width: 28px;
+    height: 40px;
+    background-image: url(../images/l-black.png);
+  }
+} 
+
+@media (max-width: 380px) {
+  .s {
+    width: 27px;
+    height: 33px;
+    background-image: url(../images/s-black.png);
+  }
+  .u {
+    width: 30px;
+    height: 33px;
+    background-image: url(../images/u-black.png);
+  }
+  .p {
+    width: 31px;
+    height: 33px;
+    background-image: url(../images/p-black.png);
+  }
+  .t {
+    width: 30px;
+    height: 33px;
+    background-image: url(../images/t-black.png);
+  }
+  .r {
+    width: 25px;
+    height: 33px;
+    background-image: url(../images/r-black.png);
+  }
+  .a {
+    width: 33px;
+    height: 33px;
+    background-image: url(../images/a-black.png);
+  }
+  .v {
+    width: 28px;
+    height: 33px;
+    background-image: url(../images/v-black.png);
+  }
+  .e {
+    width: 26px;
+    height: 33px;
+    background-image: url(../images/e-black.png);
+  }
+  .l {
+    width: 23px;
+    height: 33px;
+    background-image: url(../images/l-black.png);
   }
 } 

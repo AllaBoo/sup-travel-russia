@@ -5,30 +5,39 @@
   background-color: rgb(255, 255, 255);
   background-repeat: no-repeat;
   background-size: initial;
+  padding: 6rem 4rem;
 }
 
 .popup__content_lead {
-  padding: 0 5.5rem 4.25rem;
+  padding: 6.25rem 5.5rem 4.25rem;
   width: 698px;
+}
+
+.popup__content_background-corners {
   background-image: url(../../../images/decorative/mandala-buttom.svg), url(../../../images/decorative/mandala-top.svg);
   background-position: bottom right, top left;
+  background-repeat: no-repeat;
+}
+.popup__content_background-right {
+  background-image: url(../../../images/decorative/mandala-right.svg);
+  background-position: center right;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 1024px) {
   .popup__content {
    width: 70%;
+   padding: 4rem 2rem;
   }
 }
 
 @media (max-width: 768px) {
   .popup__content {
     width: 80%;
+    padding: 2rem 1rem;
   }
   .popup__content_lead {
-    padding: 0 1rem 3rem 1rem;
-  }
-  .popup__content_team {
-    padding: 1rem;
+    padding: 2.25rem 2rem 3rem;
   }
 }
 @media (max-width: 550px) {

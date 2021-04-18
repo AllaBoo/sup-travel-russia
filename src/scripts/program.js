@@ -3,12 +3,16 @@ import Swiper, { Pagination } from 'swiper';
 import 'swiper/swiper-bundle.css';
 import SwiperCore, { Navigation, Scrollbar } from 'swiper/core';
 SwiperCore.use([Navigation, Scrollbar, Pagination]);
-import { Popup } from './Popup';
-import { setHeaderListeners, photoPopup } from './constants';
+import { FormValidator } from './FormValidator';
+const formValidator = (...arg) => new FormValidator(...arg);
+import { PopupPhoto } from './PopupPhoto';
+import { PopupBooking } from './PopupBooking';
+import { setHeaderListeners, photoPopup, bookingPopup, bookingButton, bookingForm } from './constants';
 
 setHeaderListeners();
 
-const popupPhoto = new Popup(photoPopup);
+const popupPhoto = new PopupPhoto(photoPopup);
+const popupBooking = new PopupBooking(bookingPopup, formValidator, bookingForm);
 
 function photoZoomer (pic) {
 	const photo = pic.getAttribute('src');
@@ -131,3 +135,4 @@ var swiper = new Swiper('#media', {
 	centeredSlides: false
 });
 
+bookingButton.addEventListener('click', () => popupBooking.open());

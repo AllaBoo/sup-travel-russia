@@ -93,11 +93,11 @@
 	margin: 3rem 0;
 	cursor: url(../../images/decorative/cursor.png) 43 43, pointer;
 }
-
-.media:hover {
-	transform: rotate(-5deg);
+@media screen {
+  .media:hover {
+    transform: rotate(-5deg);
+  }
 }
-
 .swiper-container#media {
 	margin: 3rem 0 !important;
 }

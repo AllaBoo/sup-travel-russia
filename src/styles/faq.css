@@ -34,14 +34,14 @@
 		transform: rotate(360deg);
 	}
 }
-
-a, button {
-  cursor: url(../images/decorative/cursor.png) 43 43, pointer;
+@media screen {
+  a, button {
+    cursor: url(../images/decorative/cursor.png) 43 43, pointer;
+  }
+  a:hover button:hover {
+    cursor: url(../images/decorative/cursor.png) 43 43, pointer;
+  }
 }
-a:hover button:hover {
-  cursor: url(../images/decorative/cursor.png) 43 43, pointer;
-}
-
 html {
   font-size: 16px;
   font-family: Geometria;

@@ -31,13 +31,6 @@
 	}
 }
 
-a, button {
-  cursor: url(../images/decorative/cursor.png) 43 43, pointer;
-}
-a:hover button:hover {
-  cursor: url(../images/decorative/cursor.png) 43 43, pointer;
-}
-
 html {
   font-size: 16px;
   font-family: Geometria;
@@ -128,12 +121,13 @@ html {
 .contacts__:visited {
   color: #000000;
 }
-.contacts__link:hover {
-  color: #F79E1B;
-  text-decoration: underline;
-  cursor: pointer;
+@media screen {
+  .contacts__link:hover {
+    color: #F79E1B;
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
-
 .contacts__value {
   font-size: 1.125rem; 
   margin: 0;
@@ -166,5 +160,18 @@ html {
 @media (max-width: 500px) {
   .contacts__form {
     width: 80%;
+  }
+}
+@media (min-width: 461px) {
+  .contacts-rewerse {
+    display: none;
+  }
+}
+@media (max-width: 460px) {
+  .contacts {
+    display: none;
+  }
+  .contacts-rewerse {
+    display: block;
   }
 }

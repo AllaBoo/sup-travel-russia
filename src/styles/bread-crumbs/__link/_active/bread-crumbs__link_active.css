@@ -1,5 +1,6 @@
 .bread-crumbs__link_active {
   color: black;
+  cursor: auto;
 }
 .bread-crumbs__link_active:visited {
   color: black;

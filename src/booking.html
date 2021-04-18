@@ -30,8 +30,15 @@
       <div class="container-horizontal">
         <nav class="nav header__menu">
           <ul class="nav__list header__nav">
-            <li class="header__item">
-              <a class="header__link" href="">Услуги&nbsp;и&nbsp;цены</a>
+            <li class="header__item header__item_dropdown">
+              <p class="header__link">Услуги&nbsp;и&nbsp;цены</p>
+                <div class="drop">
+                  <a class="header__link" href="tours.html">Выездные&nbsp;SUP&nbsp;туры</a>
+                  <a class="header__link" href="program.html">Прогулки&nbsp;на&nbsp;SUP</a>
+                  <a class="header__link">Йога на SUP</a>
+                  <a class="header__link">Аренда&nbsp;SUP</a>
+                  <a class="header__link">Мероприятия</a>
+                </div>
             </li>
             <li class="header__item">
               <a class="header__link" href="booking.html">Бронирование</a>
@@ -73,7 +80,7 @@
             <img class="booking__divider" src="<%=require('./images/icons/divider.svg').default %>" alt="Разделитель">
 
             <div class="booking__item">
-              <p class="booking__caption"><span class="span"><span class="bold">02.</span> Ознакомьтесь </span>с договором оказания услуг</p>
+              <p class="booking__caption"><span class="span"><span class="bold">02.</span> Ознакомьтесь </span>с <a href="assets/files/contract.pdf" class="booking__link" target="__blank">договором оказания услуг</a></p>
               <img class="booking__marker booking__marker_left" src="<%=require('./images/icons/line-to-left.png').default %>" alt="Маркер">
               <div class="booking__layout">
                 <img class="booking___icon" src="<%=require('./images/icons/contract.svg').default %>" alt="Иконка договор">
@@ -93,7 +100,7 @@
             <img class="booking__divider" src="<%=require('./images/icons/divider.svg').default %>" alt="Разделитель">
 
             <div class="booking__item">
-              <p class="booking__caption"><span class="span"><span class="bold">04.</span> Ознакомьтесь </span>с <a href="faq.html" class="booking__link">часто-задаваемыми вопросами</a></p>
+              <p class="booking__caption"><span class="span"><span class="bold">04.</span> Ознакомьтесь </span>с <a href="faq.html" class="booking__link" target="__blank">часто-задаваемыми вопросами</a></p>
               <img class="booking__marker booking__marker_left" src="<%=require('./images/icons/line-to-left.png').default %>" alt="Маркер">
               <div class="booking__layout">
                 <img class="booking___icon" src="<%=require('./images/icons/question.svg').default %>" alt="Иконка справка">
@@ -129,10 +136,10 @@
                 <div class="booking__layout booking__layout-mobile">
                   <img class="booking___icon" src="<%=require('./images/icons/booking.svg').default %>" alt="Иконка бронирование">
                 </div>
-                <p><span class="bold">05.</span> Сделайте запись через форму онлайн-бронирования, которая доступна:</p>
-                <p>– на данной странице;</p>
+                <p><span class="bold">05.</span> Сделайте запись через форму онлайн-бронирования:</p>
+                <!-- <p>– на данной странице;</p>
                 <p>– на страницах описания услуг;</p>
-                <p>– на страницах выбора услуг - в баннерах услуг;</p>
+                <p>– на страницах выбора услуг - в баннерах услуг;</p> -->
               </div>
               <div>
                 <img class="booking__divider booking__divider_mobile" src="<%=require('./images/icons/divider.svg').default %>" alt="Разделитель">
@@ -141,7 +148,7 @@
                 </div>
                 <p><span class="bold">05.</span> Сделайте запись по телефону или по любому другому удобному каналу связи: </p>
                 <br>
-                <div class="booking__socials">
+                <!-- <div class="booking__socials">
                   <a href="https://www.facebook.com/suptravelrussia/" target="_blank" rel="nofollow"  class="booking__social">
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__icon">
                       <path d="M22 11C22 4.92486 17.0751 0 11 0C4.92486 0 0 4.92486 0 11C0 16.4903 4.02252 21.0412 9.28125 21.8664V14.1797H6.48828V11H9.28125V8.57656C9.28125 5.81969 10.9235 4.29688 13.4361 4.29688C14.6392 4.29688 15.8984 4.51172 15.8984 4.51172V7.21875H14.5114C13.145 7.21875 12.7188 8.06674 12.7188 8.9375V11H15.7695L15.2818 14.1797H12.7188V21.8664C17.9775 21.0412 22 16.4903 22 11Z"/>
@@ -154,7 +161,7 @@
                       <path d="M18.193 5.12621C18.193 5.85668 17.6 6.44535 16.8738 6.44535C16.1434 6.44535 15.5547 5.85238 15.5547 5.12621C15.5547 4.39574 16.1477 3.80707 16.8738 3.80707C17.6 3.80707 18.193 4.40004 18.193 5.12621Z"/>
                       </svg>
                   </a>
-                  <a href="" target="_blank" rel="nofollow"  class="booking__social">
+                  <a href="http://t.me/sup_travel_russia" target="_blank" rel="nofollow"  class="booking__social">
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__icon">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M22 11C22 17.0751 17.0751 22 11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11ZM11.3944 8.12047C10.3245 8.56549 8.18615 9.48655 4.97943 10.8837C4.45871 11.0907 4.18593 11.2933 4.1611 11.4914C4.11913 11.8262 4.53835 11.958 5.10921 12.1375C5.18686 12.1619 5.26732 12.1872 5.3498 12.214C5.91144 12.3966 6.66695 12.6102 7.05971 12.6187C7.41598 12.6263 7.81361 12.4795 8.25261 12.178C11.2488 10.1555 12.7954 9.13328 12.8925 9.11124C12.961 9.0957 13.0559 9.07615 13.1202 9.13332C13.1845 9.19048 13.1782 9.29875 13.1714 9.32779C13.1299 9.50484 11.4843 11.0347 10.6327 11.8264C10.3672 12.0732 10.1789 12.2483 10.1404 12.2883C10.0542 12.3779 9.96631 12.4626 9.88184 12.544C9.36006 13.047 8.96878 13.4242 9.90351 14.0402C10.3527 14.3362 10.7121 14.581 11.0707 14.8252C11.4623 15.0919 11.853 15.3579 12.3583 15.6891C12.4871 15.7736 12.6101 15.8612 12.7298 15.9466C13.1856 16.2715 13.595 16.5634 14.1009 16.5169C14.3948 16.4898 14.6984 16.2134 14.8526 15.3891C15.2171 13.441 15.9334 9.22004 16.0989 7.48068C16.1134 7.32829 16.0952 7.13326 16.0805 7.04765C16.0658 6.96204 16.0352 6.84005 15.9239 6.74976C15.7922 6.64281 15.5887 6.62026 15.4977 6.62187C15.084 6.62915 14.4492 6.84987 11.3944 8.12047Z"/>
                     </svg>
@@ -169,7 +176,7 @@
                       <path d="M23.4497 0.948076C23.6174 0.401109 23.4497 0 22.6568 0H20.0303C19.362 0 19.0566 0.347001 18.8889 0.728113C18.8889 0.728113 17.5535 3.9264 15.6611 6.00017C15.0503 6.6036 14.7712 6.79415 14.4382 6.79415C14.2718 6.79415 14.0298 6.6036 14.0298 6.05663V0.948076C14.0298 0.291716 13.837 0 13.2801 0H9.15281C8.73601 0 8.48449 0.303479 8.48449 0.592842C8.48449 1.21391 9.43067 1.35742 9.52769 3.10771V6.90472C9.52769 7.73635 9.37558 7.88809 9.04022 7.88809C8.15033 7.88809 5.9849 4.67804 4.69977 1.00336C4.44945 0.289363 4.19673 0.00117675 3.52602 0.00117675H0.900669C0.149712 0.00117675 0 0.348177 0 0.72929C0 1.41388 0.889889 4.80155 4.14523 9.28197C6.31546 12.3415 9.37079 14 12.1542 14C13.8226 14 14.0286 13.6318 14.0286 12.9966V10.6841C14.0286 9.94774 14.1879 9.79953 14.7161 9.79953C15.1042 9.79953 15.7725 9.99244 17.3307 11.4663C19.1105 13.2142 19.4051 13.9988 20.4052 13.9988H23.0305C23.7803 13.9988 24.1552 13.6306 23.9396 12.9037C23.7036 12.1803 22.8533 11.1275 21.725 9.88187C21.1118 9.1714 20.1956 8.40682 19.9165 8.02453C19.5273 7.53168 19.6398 7.31407 19.9165 6.87649C19.9177 6.87767 23.1168 2.45253 23.4497 0.948076Z"/>
                       </svg>                
                   </a>
-                </div>
+                </div> -->
               </div>
             </div>
             <div  class="booking__container booking__container-06">
@@ -216,7 +223,7 @@
             <img class="booking__divider" src="<%=require('./images/icons/divider.svg').default %>" alt="Разделитель">
 
             <div class="booking__item">
-              <p class="booking__caption"><span class="span"><span class="bold">02.</span> Ознакомьтесь </span>с <a href="faq.html" class="booking__link">часто-задаваемыми вопросами</a></p>
+              <p class="booking__caption"><span class="span"><span class="bold">02.</span> Ознакомьтесь </span>с <a href="faq.html" target="__blank" class="booking__link">часто-задаваемыми вопросами</a></p>
               <img class="booking__marker booking__marker_left" src="<%=require('./images/icons/line-to-left.png').default %>" alt="Маркер">
               <div class="booking__layout">
                 <img class="booking___icon" src="<%=require('./images/icons/question.svg').default %>" alt="Иконка справка">
@@ -230,7 +237,7 @@
                 <img class="booking___icon" src="<%=require('./images/icons/contract.svg').default %>" alt="Иконка договор">
               </div>
               <img class="booking__marker booking__marker_right" src="<%=require('./images/icons/line-to-right.png').default %>" alt="Маркер">
-              <p class="booking__caption"><span class="span"><span class="bold">03.</span> Ознакомьтесь </span>с договором оказания услуг</p>
+              <p class="booking__caption"><span class="span"><span class="bold">03.</span> Ознакомьтесь </span>с <a href="assets/files/contract.pdf" class="booking__link" target="__blank">договором оказания услуг</a></p>
             </div>
 
             <img class="booking__divider" src="<%=require('./images/icons/divider.svg').default %>" alt="Разделитель">
@@ -242,17 +249,17 @@
                 <div class="booking__layout">
                   <img class="booking___icon" src="<%=require('./images/icons/booking.svg').default %>" alt="Иконка бронирование">
                 </div>
-                <p class="booking__text"><span class="bold">04.</span> Сделайте запись через форму онлайн-бронирования, которая доступна:
-                <br>– на данной странице;
+                <p class="booking__text"><span class="bold">04.</span> Сделайте запись через форму заявки, которая доступна на сайте.
+                <!-- <br>– на данной странице;
                 <br>– на страницах описания услуг;
-                <br>– на страницах выбора услуг - в баннерах услуг;</p>
+                <br>– на страницах выбора услуг - в баннерах услуг;</p> -->
               </div>
               <div class="booking__column">
                 <div class="booking__layout">
                   <img class="booking___icon" src="<%=require('./images/icons/booking.svg').default %>" alt="Иконка бронирование">
                 </div>
-                <p class="booking__text"><span class="bold">04.</span> Сделайте запись по телефону или по любому другому удобному каналу связи: </p>
-                <div class="booking__socials">
+                <p class="booking__text"><span class="bold">04.</span> Сделайте запись по телефону или по любому другому удобному каналу связи.</p>
+                <!-- <div class="booking__socials">
                   <a href="https://www.facebook.com/suptravelrussia/" target="_blank" rel="nofollow"  class="booking__social">
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__icon">
                       <path d="M22 11C22 4.92486 17.0751 0 11 0C4.92486 0 0 4.92486 0 11C0 16.4903 4.02252 21.0412 9.28125 21.8664V14.1797H6.48828V11H9.28125V8.57656C9.28125 5.81969 10.9235 4.29688 13.4361 4.29688C14.6392 4.29688 15.8984 4.51172 15.8984 4.51172V7.21875H14.5114C13.145 7.21875 12.7188 8.06674 12.7188 8.9375V11H15.7695L15.2818 14.1797H12.7188V21.8664C17.9775 21.0412 22 16.4903 22 11Z"/>
@@ -265,7 +272,7 @@
                       <path d="M18.193 5.12621C18.193 5.85668 17.6 6.44535 16.8738 6.44535C16.1434 6.44535 15.5547 5.85238 15.5547 5.12621C15.5547 4.39574 16.1477 3.80707 16.8738 3.80707C17.6 3.80707 18.193 4.40004 18.193 5.12621Z"/>
                       </svg>
                   </a>
-                  <a href="" target="_blank" rel="nofollow"  class="booking__social">
+                  <a href="http://t.me/sup_travel_russia" target="_blank" rel="nofollow"  class="booking__social">
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__icon">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M22 11C22 17.0751 17.0751 22 11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11ZM11.3944 8.12047C10.3245 8.56549 8.18615 9.48655 4.97943 10.8837C4.45871 11.0907 4.18593 11.2933 4.1611 11.4914C4.11913 11.8262 4.53835 11.958 5.10921 12.1375C5.18686 12.1619 5.26732 12.1872 5.3498 12.214C5.91144 12.3966 6.66695 12.6102 7.05971 12.6187C7.41598 12.6263 7.81361 12.4795 8.25261 12.178C11.2488 10.1555 12.7954 9.13328 12.8925 9.11124C12.961 9.0957 13.0559 9.07615 13.1202 9.13332C13.1845 9.19048 13.1782 9.29875 13.1714 9.32779C13.1299 9.50484 11.4843 11.0347 10.6327 11.8264C10.3672 12.0732 10.1789 12.2483 10.1404 12.2883C10.0542 12.3779 9.96631 12.4626 9.88184 12.544C9.36006 13.047 8.96878 13.4242 9.90351 14.0402C10.3527 14.3362 10.7121 14.581 11.0707 14.8252C11.4623 15.0919 11.853 15.3579 12.3583 15.6891C12.4871 15.7736 12.6101 15.8612 12.7298 15.9466C13.1856 16.2715 13.595 16.5634 14.1009 16.5169C14.3948 16.4898 14.6984 16.2134 14.8526 15.3891C15.2171 13.441 15.9334 9.22004 16.0989 7.48068C16.1134 7.32829 16.0952 7.13326 16.0805 7.04765C16.0658 6.96204 16.0352 6.84005 15.9239 6.74976C15.7922 6.64281 15.5887 6.62026 15.4977 6.62187C15.084 6.62915 14.4492 6.84987 11.3944 8.12047Z"/>
                     </svg>
@@ -280,7 +287,7 @@
                       <path d="M23.4497 0.948076C23.6174 0.401109 23.4497 0 22.6568 0H20.0303C19.362 0 19.0566 0.347001 18.8889 0.728113C18.8889 0.728113 17.5535 3.9264 15.6611 6.00017C15.0503 6.6036 14.7712 6.79415 14.4382 6.79415C14.2718 6.79415 14.0298 6.6036 14.0298 6.05663V0.948076C14.0298 0.291716 13.837 0 13.2801 0H9.15281C8.73601 0 8.48449 0.303479 8.48449 0.592842C8.48449 1.21391 9.43067 1.35742 9.52769 3.10771V6.90472C9.52769 7.73635 9.37558 7.88809 9.04022 7.88809C8.15033 7.88809 5.9849 4.67804 4.69977 1.00336C4.44945 0.289363 4.19673 0.00117675 3.52602 0.00117675H0.900669C0.149712 0.00117675 0 0.348177 0 0.72929C0 1.41388 0.889889 4.80155 4.14523 9.28197C6.31546 12.3415 9.37079 14 12.1542 14C13.8226 14 14.0286 13.6318 14.0286 12.9966V10.6841C14.0286 9.94774 14.1879 9.79953 14.7161 9.79953C15.1042 9.79953 15.7725 9.99244 17.3307 11.4663C19.1105 13.2142 19.4051 13.9988 20.4052 13.9988H23.0305C23.7803 13.9988 24.1552 13.6306 23.9396 12.9037C23.7036 12.1803 22.8533 11.1275 21.725 9.88187C21.1118 9.1714 20.1956 8.40682 19.9165 8.02453C19.5273 7.53168 19.6398 7.31407 19.9165 6.87649C19.9177 6.87767 23.1168 2.45253 23.4497 0.948076Z"/>
                       </svg>                
                   </a>
-                </div>
+                </div> -->
               </div>
             </div>
 
@@ -311,9 +318,55 @@
             </div>
             <p class="booking__caption" style="text-align: center; margin: 1.5rem auto 0;"><span class="span">Получите услугу</span>в назначенный день</p>
             <div class="section__buttons">
-              <a data-url="https://n485932.yclients.com/company:447668/activities?o=m-1" class="ms_booking section__button section__button_black">Записаться онлайн</a>
+              <a class="section__button section__button_black" id="bookingButton">Оставить заявку на услугу</a>
             </div>
           </div>
+        </details>
+
+        <details class="faq__details">
+          <summary class="faq__summary">Порядок оплаты услуг</summary>
+          <p class="faq__text bold">Оплата групповых услуг в расписании:</p>
+          <p class="faq__text italic">1-ый этап:</p>
+          <p class="faq__text">Предоплата услуги, что составляет 30% от общей стоимости забронированных услуг.</p>
+          <p class="faq__text">Оплата производится прямо в форме онлайн записи через ЮКассу или по ссылке на предоплату через банк-клиент.</p>
+          <p class="faq__text">Без предоплаты услуги подтвердить запись невозможно. </p>
+          <p class="faq__text italic">2-ой этап:</p>
+          <p class="faq__text">Оплата услуги на станции в день ее оказания, что составляет оставшуюся неоплаченную сумму от общей стоимости забронированных услуг, а также учитывает стоимость использованных дополнительных услуг.</p>
+          <br>
+          <p class="faq__text bold">Оплата аренды индивидуальных услуг. </p>
+          <p class="faq__text italic">1-ый этап:</p>
+          <p class="faq__text">Предоплата услуги, что составляет 30% от общей стоимости забронированных услуг.</p>
+          <p class="faq__text">Оплата производится в ручном режиме по ссылке на предоплату через банк-клиент. </p>
+          <p class="faq__text">Без предоплаты услуги подтвердить запись невозможно. </p>
+          <p class="faq__text italic">2-ой этап:</p>
+          <p class="faq__text">Оплата услуги на станции в день ее оказания, что составляет оставшуюся неоплаченную сумму от общей стоимости забронированных услуг, а также учитывает стоимость использованных дополнительных услуг.</p>
+        </details>
+
+        <details class="faq__details">
+          <summary class="faq__summary">Порядок отмены или переноса записи</summary>
+          <p class="faq__text bold">Отмены и переносы в связи с личными причинами:</p>
+          <p class="faq__text">Если по какой-либо причине Вы не сможете приехать в назначенное время для получения услуги, Вы вправе перенести свою запись на другую дату в рамках следующих 30 дней. Это можно сделать:</p>
+          <ul class="faq__ul">
+            <li class="faq__li">Связавшись с нашим администратором по телефону или в любом другом канале связи <span class="bold">не менее, чем за 24 часа до начала мероприятия.</span></li>
+            <li class="faq__li">Самостоятельно через профиль в системе онлайн-записи YClients <span class="bold">не менее, чем за 24 часа до начала мероприятия.</span></li>
+          </ul>
+          <p class="faq__text">В случае, если Вы хотите отменить бронирование и вернуть предоплату, Вам необходимо ознакомиться с условиями возврата в нашем <a href="assets/files/contract.pdf" target="_blank" class="link">договоре оферты</a>. </p>
+          <p class="faq__text">Отменить свой визит Вы можете:</p>
+          <ul class="faq__ul">
+            <li class="faq__li">Связавшись с нашим администратором по телефону или в любом другом канале связи не менее, чем за 24 часа до начала мероприятия. <span class="span">Внимание! Если Вы не уведомили нашего администратора об отмене или переносе услуги, или уведомили менее, чем за 24 часа до времени бронирования - <span class="bold">предоплата не возвращается.</span></span></li>
+          </ul>
+          <br>
+          <p class="faq__text bold">Отмены и переносы в связи с неблагоприятными условиями для катания на SUP:</p>
+          <p class="faq__text">В случае, если окружающие условия являются неблагоприятными и небезопасными для катания на SUP, наш администратор обязательно свяжется с Вами не менее, чем за 3 часа до мероприятия.</p>
+          <p class="faq__text">Что можно сделать?</p>
+          <ul class="faq__ul">
+            <li class="faq__li">Изменить маршрут на тот, что будет безопасным для текущих условий - об этом расскажет администратор;</li>
+            <li class="faq__li">Перенести запись на другую дату в рамках следующих 30 дней;</li>
+            <li class="faq__li">Отменить запись и вернуть предоплату*
+              <span class="span">*Внимание! Удерживается часть предоплаты. Подробнее об этом читайте в <a href="assets/files/contract.pdf" target="_blank" class="link">договоре оферты</a>.</span></li>
+          </ul>
+          <br>
+          <p class="faq__text">Подробнее о неблагоприятных условиях для катания на сап читайте в <a href="faq.html" target="_blank" class="link">часто-задаваемых вопросах</a>. </p>
         </details>
     </section>
 
@@ -330,20 +383,18 @@
           <a href="" class="footer__link">Аренда SUP</a>
           <a href="" class="footer__link">Йога на SUP</a>
           <a href="" class="footer__link">Мероприятия</a>
-          <a href="" class="footer__link">Цены</a>
         </div>
 
         <div class="footer__column">
-          <a href="" class="footer__link">F.A.Q.</a>
-          <a href="" class="footer__link">Расписание</a>
-          <a href="" class="footer__link">Контакты</a>
-          <a href="" class="footer__link">Уголок Потребителя</a>
+          <a href="" class="footer__link">Цены</a>
+          <a href="faq.html" class="footer__link">F.A.Q.</a>
+          <a href="contacts.html" class="footer__link">Контакты</a>
           <a href="" class="footer__link">Медиа</a>
           <a href="" class="footer__link">Отзывы</a>
         </div> 
 
         <div class="footer__column footer__column_right">
-          <a href="tel+74951855979" class="footer__link bold black">+7 (495) 185-59-79</a>
+          <a href="tel:+74951855676" class="footer__link bold black">+7 (495) 185-56-76</a>
           <a href="mailto:suptravelrussia@gmail.com" class="footer__link underline">suptravelrussia@gmail.com</a>
           <div class="container-horizontal">
             <a href="https://www.facebook.com/suptravelrussia/" target="_blank" rel="nofollow" class="footer__social">
@@ -358,7 +409,7 @@
                 <path d="M18.193 5.12621C18.193 5.85668 17.6 6.44535 16.8738 6.44535C16.1434 6.44535 15.5547 5.85238 15.5547 5.12621C15.5547 4.39574 16.1477 3.80707 16.8738 3.80707C17.6 3.80707 18.193 4.40004 18.193 5.12621Z"/>
                 </svg>
             </a>
-            <a href="" target="_blank" rel="nofollow" class="footer__social">
+            <a href="http://t.me/sup_travel_russia" target="_blank" rel="nofollow" class="footer__social">
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__icon">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M22 11C22 17.0751 17.0751 22 11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11ZM11.3944 8.12047C10.3245 8.56549 8.18615 9.48655 4.97943 10.8837C4.45871 11.0907 4.18593 11.2933 4.1611 11.4914C4.11913 11.8262 4.53835 11.958 5.10921 12.1375C5.18686 12.1619 5.26732 12.1872 5.3498 12.214C5.91144 12.3966 6.66695 12.6102 7.05971 12.6187C7.41598 12.6263 7.81361 12.4795 8.25261 12.178C11.2488 10.1555 12.7954 9.13328 12.8925 9.11124C12.961 9.0957 13.0559 9.07615 13.1202 9.13332C13.1845 9.19048 13.1782 9.29875 13.1714 9.32779C13.1299 9.50484 11.4843 11.0347 10.6327 11.8264C10.3672 12.0732 10.1789 12.2483 10.1404 12.2883C10.0542 12.3779 9.96631 12.4626 9.88184 12.544C9.36006 13.047 8.96878 13.4242 9.90351 14.0402C10.3527 14.3362 10.7121 14.581 11.0707 14.8252C11.4623 15.0919 11.853 15.3579 12.3583 15.6891C12.4871 15.7736 12.6101 15.8612 12.7298 15.9466C13.1856 16.2715 13.595 16.5634 14.1009 16.5169C14.3948 16.4898 14.6984 16.2134 14.8526 15.3891C15.2171 13.441 15.9334 9.22004 16.0989 7.48068C16.1134 7.32829 16.0952 7.13326 16.0805 7.04765C16.0658 6.96204 16.0352 6.84005 15.9239 6.74976C15.7922 6.64281 15.5887 6.62026 15.4977 6.62187C15.084 6.62915 14.4492 6.84987 11.3944 8.12047Z"/>
               </svg>
@@ -385,7 +436,7 @@
         
       </div>
       <div class="footer__row footer__row_low">
-        <a href="" class="footer__link">Политика конфиденциальности</a>
+        <a href="" class="footer__link">Уголок Потребителя</a>
         <a href="" class="footer__link">Карта сайта</a>
         <a href="" class="footer__link">ИП Залошков Денис Владимирович</a>
       </div>
@@ -394,27 +445,70 @@
       <div class="popup__content popup__content_lead">
         <img src="<%=require('./images/icons/close-white.svg').default %>" alt="Иконка закрытия окна" class="popup__close">
         <h3 class="popup__title">Закажите звонок</h3>
-        <form class="popup__form" id="login-form">
+        <p class="popup__subtitle"></p>
+        <form class="popup__form" id="lead-form" novalidate>
           <div class="container-horizontal popup__container-horizontal">
             <div class="popup__input-container">
               <p class="popup__input-name">Ваше имя</p>
-              <input type="text" id="fio" class="popup__input" placeholder="Введите имя" required>
-              <span class="popup__error-message" id="error-fio"></span>
+              <input type="text" id="fio" name="fio" class="popup__input popup__input_default" placeholder="Введите имя" required minlength="2" maxlength="30">
+              <p class="popup__error-message" id="error-fio"></p>
             </div>
             <div class="popup__input-container">
               <p class="popup__input-name">Ваш телефон</p>
-              <input type="tel" id="telephone" class="popup__input" placeholder="+7 (XXX) XXX-XX-XX" required>
-              <span class="popup__error-message" id="error-telephone"></span>
+              <input type="tel" id="telephone" name="telephone" class="popup__input popup__input_default" placeholder="+7(XXX)XXX-XX-XX" required pattern="((\+7|8)\d{10})|((\+7|8)(-\d{3}-\d{3}-\d{2}-\d{2}))|((\+7|8)(\(\d{3}\)\d{3}-\d{2}-\d{2}))">
+              <p class="popup__error-message" id="error-telephone"></p>
             </div>
           </div>
           <div class="popup__input-container popup__input-container_max">
             <p class="popup__input-name">Сообщение</p>
-            <input type="tel" id="message" class="popup__input">
-            <span class="popup__error-message" id="error-message"></span>
+            <textarea type="text" id="message" name="message" class="popup__input popup__input_default" placeholder="Здесь Вы можете описать, что Вас интересует" maxlength="250"></textarea>
+            <p class="popup__error-message" id="error-message"></p>
           </div>
-          <input type="checkbox" id="agre" name="agre" class="popup__checkbox" checked>
+          <input type="checkbox" id="agre" name="agre" class="popup__checkbox" checked required>
           <label for="agre" class="popup__label">Согласие на обработку <a href="" target="_blank" class="popup__link">персональных данных</a></label>
-          <button type="submit" class="button popup__button button_desabled" disabled="disabled" >Отправить</button>
+          <p class="popup__error-message" id="error-agre"></p>
+          <button type="submit" class="popup__button popup__button_desabled" disabled="disabled">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <div id="bookingPopup" class="popup">
+      <div class="popup__content">
+        <img src="<%=require('./images/icons/close-white.svg').default %>" alt="Иконка закрытия окна" class="popup__close">
+        <h3 class="popup__title">Я хочу записаться</h3>
+        <p class="popup__subtitle"></p>
+        <form class="popup__form" id="booking-form" novalidate>
+          <div class="popup__input-container popup__input-container_max">
+            <p class="popup__input-name">Услуга*</p>
+            <select name="servises" id="servises" class="popup__input popup__input_default" required>
+              <option value="" disabled selected hidden>Выберите услугу</option>
+              <option value="Индивидуальная SUP прогулка">Индивидуальная SUP прогулка</option>
+              <option value="Индивидуальные SUP туры">Индивидуальные SUP туры</option>
+              <option value="Аренда SUP">Аренда SUP</option>
+              <option value="Мероприятия">Мероприятия</option>
+            </select>
+            <p class="popup__error-message" id="error-servises"></p>
+          </div>
+          <div class="container-horizontal popup__container-horizontal">
+            <div class="popup__input-container">
+              <p class="popup__input-name">Ваше имя*</p>
+              <input type="text" id="fio-book" name="fio" class="popup__input popup__input_default" placeholder="Введите имя" required minlength="2" maxlength="30">
+              <p class="popup__error-message" id="error-fio"></p>
+            </div>
+            <div class="popup__input-container">
+              <p class="popup__input-name">Ваш телефон*</p>
+              <input type="tel" id="telephone" name="telephone" class="popup__input popup__input_default" placeholder="+7(XXX)XXX-XX-XX" required pattern="((\+7|8)\d{10})|((\+7|8)(-\d{3}-\d{3}-\d{2}-\d{2}))|((\+7|8)(\(\d{3}\)\d{3}-\d{2}-\d{2}))">
+              <p class="popup__error-message" id="error-telephone"></p>
+            </div>
+          </div>
+          <div class="popup__input-container popup__input-container_max">
+            <p class="popup__input-name">Подробности</p>
+            <textarea type="text" id="message" name="message" class="popup__input popup__input_default" placeholder="Введите запланированные дату, время, количество участников, а также любую другую информацию о Ваших пожеланиях." maxlength="250"></textarea>
+            <p class="popup__error-message" id="error-message"></p>
+          </div>
+          <input type="checkbox" id="agre" name="agre" class="popup__checkbox" checked required>
+          <label for="agre" class="popup__label">Отправляя данную форму, я соглашаюсь с <a href="" target="_blank" class="popup__link">Пользовательским соглашением</a> и <a href="" target="_blank" class="popup__link">Политикой конфиденциальности</a></label>
+          <p class="popup__error-message" id="error-agre"></p>
+          <button type="submit" class="popup__button popup__button_desabled" disabled="disabled">Отправить заявку</button>
         </form>
       </div>
     </div>

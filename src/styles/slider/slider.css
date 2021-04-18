@@ -31,7 +31,7 @@
   height: 360px;
   position: fixed;
   right: 200px;
-  top: 35vh;
+  top: 360px;
   object-position: center;
   object-fit: cover;
 }
@@ -80,10 +80,14 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
   .slider__img, .slider__images {
     width: 356px;
     height: 406px;
+  }
+  .slider {
+    width: 356px;
+    margin: auto;
   }
 }
 
@@ -92,14 +96,6 @@
 }
 .current {
   display: block;
-}
-
-
-@media (max-width: 768px) {
-  .slider {
-    width: 356px;
-    margin: auto;
-  }
 }
 
 @media (max-width: 450px) {

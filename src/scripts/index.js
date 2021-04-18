@@ -2,12 +2,12 @@ import '../styles/index.css';
 import {preloader} from './preloader';
 import LocomotiveScroll from 'locomotive-scroll';
 import Menu from './menu';
-import { Popup } from './Popup';
+import { PopupPhoto } from './PopupPhoto';
 import { setHeaderListeners, photoPopup } from './constants';
 
 setHeaderListeners();
 
-const popupPhoto = new Popup(photoPopup);
+const popupPhoto = new PopupPhoto(photoPopup);
 
 function photoZoomer (pic) {
 	const photo = pic.getAttribute('src');
@@ -41,7 +41,7 @@ function photoZoomer (pic) {
 			current = current > 0 ? current - 1 : items.length-1;
 			document.querySelector('.popup__photo').setAttribute('src', linksArr[current]);
 		}
-		document.querySelector('#cur-photo').textContent = current > 10 ? current+1 : `0${current+1}`;
+		document.querySelector('#cur-photo').textContent = current > 8 ? current+1 : `0${current+1}`;
 	}
 
 	document.querySelector('.popup__photo').addEventListener('touchstart', handleTouchStart, false);        
@@ -113,7 +113,7 @@ if (window.screen.availWidth > 768) {
 		const nextbtn = document.querySelector('#next');
 
 		//вставить количество картинок
-		document.querySelector('#last-img').textContent = items.length > 10 ? items.length : `0${items.length}`;
+		document.querySelector('#last-img').textContent = items.length > 8 ? items.length : `0${items.length}`;
 		document.querySelector('.slider__progress-done').style.width = 1 / items.length * 100 + '%';
 
 		items[current].classList.add("current");
@@ -127,7 +127,7 @@ if (window.screen.availWidth > 768) {
 			}
 
 			items[current].classList.add("current");
-      document.querySelector('#current-img').textContent = current > 10 ? current+1 : `0${current+1}`;
+      document.querySelector('#current-img').textContent = current > 8 ? current+1 : `0${current+1}`;
 			document.querySelector('.slider__progress-done').style.width = (current + 1) / items.length * 100 + '%';
 		}
     
@@ -209,17 +209,3 @@ if (window.screen.availWidth > 768) {
 	});
 
 })();
-
-// window.addEventListener("DOMContentLoaded", () => {
-
-// 	const spotlight = document.querySelector('.spotlight');
-
-// 	let spotlightSize = 'transparent 30px, rgba(0, 0, 0, 0.85) 30px)';
-
-// 	window.addEventListener('mousemove', e => updateSpotlight(e));
-
-// 	function updateSpotlight(e) {
-// 			spotlight.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 100}% ${e.pageY / window.innerHeight * 100}%, ${spotlightSize}`;
-
-// 	}
-// });

@@ -39,16 +39,16 @@ const activateAll = () => {
 document.querySelector('#all').addEventListener('click', () => activateAll());
 
 // Add the onclick listeners.
-details.forEach((targetDetail) => {
-  targetDetail.addEventListener("click", () => {
-    // Close all the details that are not targetDetail.
-    details.forEach((detail) => {
-      if (detail !== targetDetail) {
-        detail.removeAttribute("open");
-      }
-    });
-  });
-});
+// details.forEach((targetDetail) => {
+//   targetDetail.addEventListener("click", () => {
+//     // Close all the details that are not targetDetail.
+//     details.forEach((detail) => {
+//       if (detail !== targetDetail) {
+//         detail.removeAttribute("open");
+//       }
+//     });
+//   });
+// });
 
 setHeaderListeners();
 activateAll();

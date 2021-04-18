@@ -12,26 +12,34 @@
   margin-left: 4.75rem;
 }
 
-.welcome__title {
-  line-height: 5rem;
+.welcome__container {
+  display: flex;
+  cursor: url(../../images/decorative/cursor-small-trans.png) 22 22, pointer;
 }
+
 .welcome__text {
-  box-sizing: border-box;
-  padding-left: 5px;
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.2px;
 }
-@media (max-width: 768px) {
-  .welcome__title {
-    text-align: center;
-  }
+@media (max-width: 1024px) {
   .welcome__text {
-    text-align: center;
+    font-size: 1.3rem;
   }
 }
 
+@media (max-width: 900px) {
+  .welcome__container {
+    margin: 1rem auto 0;
+  }
+}
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .welcome {
+    margin-top: 4rem;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .welcome__column {
     height: fit-content;
@@ -39,16 +47,59 @@
   }
 }
 
-.design {
-  background: url(../../images/SUP-TRAVEL.png);
-  background-repeat: no-repeat;
-  width: 460px;
-  height: 59px;
+.welcome__title {
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 
+  -0   -1px 2px #808080,
+   0   -1px 1px #808080,
+  -0    1px 1px #808080,
+   0    1px 1px #808080,
+  -1px -0   1px #808080,
+   1px -0   1px #808080,
+  -1px  0   1px #808080,
+   1px  0   1px #808080,
+  -1px -1px 1px #808080,
+   1px -1px 1px #808080,
+  -1px  1px 1px #808080,
+   1px  1px 1px #808080,
+  -1px -1px 1px #808080,
+   1px -1px 1px #808080,
+  -1px  1px 1px #808080,
+   1px  1px 1px #808080,
+  -1px -1px 1px #808080,
+   1px -1px 1px #808080,
+  -1px  1px 1px #808080,
+   1px  1px 1px #808080,
+  -1px -1px 1px #808080,
+   1px -1px 1px #808080,
+  -1px  1px 1px #808080,
+   1px  1px 1px #808080;
+  font-size: 68px;
+  margin: 1rem 0 0 -5px;
+  letter-spacing: -0.05em;
+  line-height: 1;
 }
 
-.spotlight {
-  background: url(../../images/SUP-TRAVEL-black.png);
-  position: absolute;
-  width: 460px;
-  height: 59px;
+@media (max-width: 1185px) {
+  .welcome__title {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .welcome__title {
+    text-align: center;
+    margin-left: 0;
+  }
+  .welcome__text {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .welcome__title {
+    font-size: 42px;
+  }
 }

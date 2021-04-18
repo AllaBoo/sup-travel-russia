@@ -1,0 +1,65 @@
+@import url(./body/body.css);
+@import url(./container-horizontal/container-horizontal.css);
+@import url(./header.css);
+@import url(./popup/popup.css);
+@import url(./button.css);
+@import url(./section/section.css);
+@import url(./root/root.css);
+@import url(./span/span.css);
+@import url(./scroll/scroll.css);
+@import url(./footer/footer.css);
+@import url(./mixins/mixins.css);
+@import url(./bread-crumbs/bread-crumbs.css);
+@import url(./heading/heading.css);
+@import url(./cower/cower.css);
+@import url(./complexity/complexity.css);
+@import url(./title/title.css);
+@import url(./timeline/timeline.css);
+@import url(./program/program.css);
+
+@font-face {
+  font-family: Geometria;
+  font-style:  normal;
+  font-weight: 700;
+  src: url("../fonts/Geometria-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: Geometria;
+  font-style:  normal;
+  font-weight: 400;
+  src: url("../fonts/Geometria-Regular.woff") format("woff");
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@media screen {
+  a, button {
+    cursor: url(../images/decorative/cursor.png) 43 43, pointer;
+  }
+  a:hover button:hover {
+    cursor: url(../images/decorative/cursor.png) 43 43, pointer;
+  }
+}
+html {
+  font-size: 16px;
+  font-family: Geometria;
+  letter-spacing: -0.05em;
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+} 

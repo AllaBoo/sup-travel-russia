@@ -14,3 +14,10 @@
   background: rgba(0,0,0,0.75);
   z-index: 2;
 }
+
+.body_fixed {
+  height: 100vh;
+  overflow-y: hidden;
+  padding-right: 15px;
+  position: fixed;
+}

@@ -76,11 +76,12 @@
 .footer__link:visited {
   color: inherit;
 }
-.footer__link:hover {
-  color: #F79E1B;
-  text-decoration: underline;
+@media screen {
+  .footer__link:hover {
+    color: #F79E1B;
+    text-decoration: underline;
+  }
 }
-
 @media (max-width: 750px) {
   .footer__column_right {
     margin-top: 1.5rem;
@@ -98,9 +99,10 @@
 .footer__icon {
   fill: black;
 }
-
-.footer__icon:hover {
-  fill: #F79E1B;
+@media screen {
+  .footer__icon:hover {
+    fill: #F79E1B;
+  }
 }
 .crutch {
   height: 150px;

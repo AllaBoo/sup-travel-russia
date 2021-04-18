@@ -21,6 +21,7 @@ module.exports = {
     anton: './src/scripts/anton.js',
     media: './src/scripts/media.js',
     booking: './src/scripts/booking.js',
+    jerusalem: './src/scripts/jerusalem.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -173,6 +174,12 @@ module.exports = {
       template: './src/booking.html',
       filename: './booking.html',
       chunks: ['booking'],
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/jerusalem.html',
+      filename: './jerusalem.html',
+      chunks: ['jerusalem'],
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({
